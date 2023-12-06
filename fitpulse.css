@@ -1,119 +1,152 @@
-     .white{
-          background: #fff9ff;
-          font-weight: 100;
+.white{
+     background: #fff9ff;
+}
+
+.black{
+     background:#171a26;
+}
+#navbar{
+     background: rgb(145, 145, 145);
+}
+
+#navbar img{
+     width: 190px;
+}
+
+#navbar a{
+     color: aliceblue;
+     font-size: 17px;
+     font-family: 'DM Sans', sans-serif;
+}
+
+#span{
+     background-color: aliceblue;
+}
+
+.main{
+     height: 600px;
+}
+
+#mimg{
+     height: 600px;
+     width : 100%;
+     z-index: -100;
+     filter: brightness(80%);
+}
+
+.main h3{
+     color: aliceblue;
+     position: relative;
+     margin-top: -450px;
+     font-family: 'DM Sans', sans-serif;
+     font-family: 'Foldit', sans-serif;
+     font-size: 75px;
+}
+
+.stick{
+     position: relative;
+     margin-top: 270px;
+     background: rgba(16, 187, 184, 0.5);
+     height: 70px;
+     width: 89%;
+     display: flex;
+     align-items: center;
+     font-size: 20px;
+     border-top-right-radius: 400px;
+     border-bottom-right-radius: 400px;
+     overflow: hidden;
+}    
+
+.quote{
+     margin-top: -10px;
+}
+
+.stick h4{
+     margin-left: 5px;
+     margin-top: 10px;
+     font-family: 'Pacifico', cursive;
+}
+     @keyframes health{
+          from{opacity: 0.1;}
+          to{opacity: 1;}
      }
 
-     .black{
-          background: #0b0521;
-          font-weight: 100;
+     #reality{
+     display: flex;
+     width: 100%;
+     height: auto;
+     padding: 20px;
      }
-     #navbar{
-          background: #2d2d2d;
+     #need{
+          background-image: url('real-Copy.jpg');
+          background-size: cover;
      }
-     /* @media (min-width: 768px) {
-          #navbar {
-          position: fixed;
-          width: 100%;
-          }
-     } */
-
-
-     #navbar img{
-          width: 190px;
+     #need img{
+          width: 140px;
+          margin: 1px;
      }
 
-     #navbar a{
-          color: aliceblue;
-          font-size: 17px;
-          font-family: 'DM Sans', sans-serif;
+     #heading{
+          text-align: center;
+          color: rgb(112, 85, 85);
+     }
+     .para-div{
+          font-family: 'Caveat', cursive;
+          text-align: justify;
+          line-height: 25px;
+          word-spacing: 2px;
+     }
+     
+     #need h3{
+          text-align: center;
      }
 
-     #span{
-          background-color: aliceblue;
+     #fact .fa-question{
+          font-size: 25px;
+     }
+     #fact h3{
+          font-size: 27px;
      }
 
-     .main{
-          height: 600px;
+     .card{
+          height: 300px;
+          border: none;
      }
 
-     #mimg{
-          height: 600px;
-          width : 100%;
-          z-index: -100;
-          filter: brightness(80%);
+     #whywe .line{
+          background:rgb(18 28 141);
+          height: 4px;
+          width: 70px;
      }
 
-     .main h3{
-          color: aliceblue;
-          position: relative;
-          margin-top: -450px;
-          font-family: 'DM Sans', sans-serif;
-          font-family: 'Foldit', sans-serif;
-          font-size: 75px;
+     #whywe h2 , #whywe h3{
+          text-align: center;
+          font-family:  bicyclette, sans-serif;
      }
 
-     .stick{
-          position: relative;
-          margin-top: 270px;
-          background: rgba(16, 187, 184, 0.5);
-          height: 70px;
-          width: 89%;
+     #whywe p{
+          text-align: justify;
+     }
+
+     .sectionGym{
           display: flex;
+          justify-content: space-between;
           align-items: center;
-          font-size: 20px;
-          border-top-right-radius: 400px;
-          border-bottom-right-radius: 400px;
-          overflow: hidden;
-     }    
-
-     .quote{
-          margin-top: -10px;
-     }
-
-     .stick h4{
-          margin-left: 5px;
-          margin-top: 10px;
-          font-family: 'Pacifico', cursive;
-     }
-          @keyframes health{
-               from{opacity: 0.1;}
-               to{opacity: 1;}
-          }
-
-          #reality{
-          display: flex;
+          background-color: rgb(255, 0, 0);
+          color:rgb(255, 255, 255);
+          height: 50px;
           width: 100%;
-          height: auto;
-          padding: 20px;
-          }
-          #need{
-               background-image: url('real-Copy.jpg');
-               background-size: cover;
-          }
-          #need img{
-               width: 140px;
-               margin: 1px;
-          }
+     }
 
-          #heading{
-               text-align: center;
-               color: rgb(112, 85, 85);
-          }
-          .para-div{
-               font-family: 'Caveat', cursive;
-               text-align: justify;
-               line-height: 25px;
-               word-spacing: 2px;
-          }
-          
-          #need h3{
-               text-align: center;
-          }
-
-          #fact .fa-question{
-               font-size: 25px;
-          }
-          #fact h3{
-               font-size: 27px;
-          }
-
+     .details{
+          display: none;
+          background-color: grey;
+          text-align: justify;
+          padding-top: 5px;
+          padding-right: 9px;
+          padding-left: 20px;
+          word-spacing: 4px;
+          height: 60px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+     }
