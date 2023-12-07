@@ -72,10 +72,10 @@
      }
 
      #reality{
-     display: flex;
-     width: 100%;
-     height: auto;
-     padding: 20px;
+          display: flex;
+          width: 100%;
+          height: auto;
+          padding: 20px;
      }
      #need{
           background-image: url('real-Copy.jpg');
@@ -128,25 +128,59 @@
           text-align: justify;
      }
 
+     .two{
+          grid-area: image;
+     }
+     .one{
+          grid-area : other;
+     }     
+     @media only screen and (max-width: 768px) {
+     #grid{
+          display: grid;
+          grid-template-areas: 
+               'image'
+               'other'
+          ;
+          grid-template-columns: 65% auto;
+          height: auto;
+          width: 100%;   
+     }
+     }
+     
+     @media only screen and (min-width: 768px) {
+          
+          #grid{
+               display: grid;
+               grid-template-areas: 'other image';
+               grid-template-columns: 65% auto;
+               height: auto;
+               width: 100%;   
+          }
+          }
+
+     
      .sectionGym{
           display: flex;
           justify-content: space-between;
           align-items: center;
-          background-color: rgb(255, 0, 0);
+          background-color: red;
           color:rgb(255, 255, 255);
           height: 50px;
           width: 100%;
+     }
+
+     .sectionGym i{
+          cursor: pointer;
      }
 
      .details{
           display: none;
           background-color: grey;
           text-align: justify;
-          padding-top: 5px;
-          padding-right: 9px;
-          padding-left: 20px;
+          padding: 5px 9px 2px 20px;
           word-spacing: 4px;
-          height: 60px;
+          height: max-content;
           border-bottom-left-radius: 20px;
           border-bottom-right-radius: 20px;
      }
+     
