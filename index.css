@@ -10,12 +10,13 @@ body{
 .nav-dark{
      border-bottom: 3px solid #a2d821;
      color: #969c3a;
-     background-color: transparent;
+     background-color: #100F11;
 }
 
 .nav-white{
      border-bottom: 3px solid #540514;
      color: #100F11;
+     background-color: #EAE1EB ;
 }
 
 #logoIMG{
@@ -32,16 +33,20 @@ li{
      padding-left: 5rem; 
 }
 
+a.active{
+     color: red;
+}
+
 #mode{
      cursor: pointer;
-     font-size: 3.5vh;
+     font-size: large;
      margin-left: 5rem;
      margin-right: 5rem;
 }
 
 #user{
      cursor: pointer;
-     font-size: 3.9vh;
+     font-size: x-large;
      margin: 1rem;
 }
 
@@ -53,29 +58,30 @@ li{
 }
 
 .hero-content{
-     padding-top: 15rem;
-     padding-left: 2.5rem;
-     
+     padding-top: 16rem;
+     padding-left: 3rem;
 }
 
 .main-content h1{
      font-family:'Bebas Neue';
-     letter-spacing: 2.5px;
+     letter-spacing: 0.6vw;
      font-size: 55px;
      text-shadow: 2.3px 2.3px 2.3px #100F11;
+     font-weight: 900;
      color: white;
+}
+
+.main-extra{
+     gap: 1.2rem;
+     display: flex;
+     align-items: center;
+     padding-top: 0.8rem;
+     color: white;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #line{
      width:6rem;
-     height: 0.3rem;
-     background-color: red;
-}
-
-.main-extra{
-     gap: 15px;
-     display: flex;
-     align-items: center;
-     padding-top: 2rem;
-     padding-left: 2rem;
+     height: 0.2rem;
+     background-color: orangered;
 }
