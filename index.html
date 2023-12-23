@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
      <link rel="stylesheet" href="css/bootstrap.css">
      <link rel="stylesheet" href="index.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
      <style>
+          @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');          
           @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&family=Titan+One&display=swap');
      </style>
 </head>
@@ -22,6 +24,7 @@
 
           <button type="button" class="navbar-toggler" data-bs-target="#navcollapse" data-bs-toggle="collapse">
                <i class="fa-solid fa-bars" style="color: #2d2d2d;"></i>
+
           </button>
 
           <ul class="collapse navbar-collapse" id="navcollapse">
@@ -43,27 +46,228 @@
           </ul>
 
           <i class="fa-solid fa-circle-half-stroke icon" id="mode"></i>
-          <i class="fa-regular fa-circle-user icon" id="user"></i>
+          <i class="fa-solid fa-user" id="user"></i>
      </nav>
 
-     <div id="home" class="container-fluid">
-          <div class="hero-content">
-               <div class="main-content">
-                    <h1>BULID PERFECT BODY </h1>
-                    <h1>SHAPE YOUR GOOD AND </h1>
-                    <h1>HEALTHY LIFE.</h1>
+     <div id="home">
+
+          <div class="main">
+               <div class="hero-content">
+                    <div class="main-content">
+                         <h1>BULID PERFECT BODY </h1>
+                         <h1>SHAPE YOUR GOOD AND </h1>
+                         <h1>HEALTHY LIFE.</h1>
+                    </div>
+                    <div class="main-extra">
+                         <div id="line"></div>
+                         <h4>WITH FITPULSE</h4>
+                    </div>
                </div>
-               <div class="main-extra">
-                    <div id="line"></div>
-                    <h4>WITH FITPULSE</div></h4>
-               </span>
+          </div>
+
+          <div class="second-main">
+               <h1 class="need-black">WHY WE NEED ?</h1>
+
+          <div class="carousel" id="facts" data-bs-ride="carousel">
+               <div class="carousel-inner">
+                    <div class="carousel-item active">
+                         <div class="container">
+                              <div class="card">
+                                   <img class="card-img-top rounded-circle" src="image/depression.jpg" alt="Title">
+                                   <div class="card-body">
+                                        <h4 class="card-title">Depression</h4>
+                                        <p class="card-text">Depression affects about 1 in 15 adults in any
+                                             given year, and 1 in 6 people will experience depression at some time in
+                                             their life. An Our World In Data study estimates about 3.4% (2-6% when
+                                             including the margin of error) of the global population has depression.
+                                             This is about 264 million people worldwide.
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="carousel-item">
+                         <div class="container">
+                              <div class="card">
+                                   <img class="card-img-top rounded-circle" src="image/diabetes.jpg" alt="Title">
+                                   <div class="card-body">
+                                        <h4 class="card-title">Diabetes</h4>
+                                        <p class="card-text">According to the World Health Organization,
+                                             diabetes was the direct cause of 1.5 million deaths in 2019, 48% of which
+                                             occurred in patients younger than 70 years of age. The International
+                                             Diabetes Federation (IDF) offers an even more sobering statistic, citing
+                                             diabetes as the cause of 6.7 million deaths in 2021.</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="carousel-item">
+                         <div class="container">
+                              <div class="card">
+                                   <img class="card-img-top rounded-circle" src="image/cancer.jpg" alt="Title">
+                                   <div class="card-body">
+                                        <h4 class="card-title">Cancer</h4>
+                                        <p class="card-text">Cancer is the second leading cause of death
+                                             worldwide, accounting for nearly 10 million deaths in 2020.Each year,
+                                             approximately 400 000 children develop cancer.There are over 200 different
+                                             types of cancer, each with its own set of causes, risk factors, symptoms,
+                                             and treatments.</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="carousel-item">
+                         <div class="container">
+                              <div class="card ">
+                                   <img class="card-img-top rounded-circle" src="image/attack.jpg" alt="Title">
+                                   <div class="card-body">
+                                        <h4 class="card-title">Heart Attack / CVDs</h4>
+                                        <p class="card-text">In 2019, an estimated 17.9 million people died
+                                             from CVDs, representing 32% of all global deaths. Of these deaths, 85% were
+                                             due to heart attack and stroke.A recent report from the World Heart
+                                             Federation (WHF) states that deaths from cardiovascular disease surged
+                                             globally from 12.1 million in 1990 to 20.5 million in 2021. </p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="carousel-item">
+                         <div class="container">
+                              <div class="card">
+                                   <img class="card-img-top rounded-circle" src="image/obesity.jpg" alt="Title">
+                                   <div class="card-body">
+                                        <h4 class="card-title">Obesity</h4>
+                                        <p class="card-text">The issue has grown to epidemic proportions,
+                                             with over 4 million people dying each year as a result of being overweight
+                                             or obese in 2017 according to the global burden of disease.</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="carousel-item">
+                         <div class="container">
+                              <div class="card">
+                                   <img class="card-img-top rounded-circle" src="image/stress.jpg" alt="Title">
+                                   <div class="card-body">
+                                        <h4 class="card-title">Stress</h4>
+                                        <p class="card-text">Stress has become a familiar companion.
+                                             Balancing work, family, and personal responsibilities can often lead to
+                                             heightened stress levels, affecting both our mental and physical health.
+                                             With the hustle and bustle of modern life, it's not uncommon to find
+                                             ourselves burning the midnight oil or sacrificing precious hours of sleep.
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="carousel-item">
+                         <div class="container">
+                              <div class="card">
+                                   <img class="card-img-top rounded-circle" src="image/food.jpg" alt="Title">
+                                   <div class="card-body">
+                                        <h4 class="card-title">Food And Sleep</h4>
+                                        <p class="card-text">In a world where time is of the essence, fast
+                                             food and processed snacks often find their way into our daily diets. Late
+                                             nights and early mornings can disrupt our circadian rhythm, impacting
+                                             overall health and vitality.</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <button type="button" class="carousel-control-prev" data-bs-target="#facts" data-bs-slide="prev" style="padding-right: 55px;">
+                    <span class="carousel-control-prev-icon"></span>
+               </button>
+
+               <button type="button" class="carousel-control-next" data-bs-target="#facts" data-bs-slide="next" style="padding-left: 55px;">
+                    <span class="carousel-control-next-icon"></span>
+               </button>
+          </div>
+
+
           </div>
      </div>
 
      <div id="fitness">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem perspiciatis est atque illum aliquid inventore ut voluptatum, eaque saepe iure adipisci reiciendis recusandae voluptas ipsam, mollitia sit aspernatur odio asperiores amet dolores doloremque? Molestias pariatur consectetur natus. Culpa error, assumenda amet odio explicabo harum nesciunt ullam, vero impedit quos delectus nisi laborum quam fuga? Dicta optio corrupti cum rerum, quasi ipsa atque vel, sequi placeat magnam labore illum ab sunt nesciunt consequuntur nulla eos! Eos, veritatis quam ea eius accusantium numquam eveniet iste repudiandae illo quod. Quaerat, enim, assumenda perferendis fuga ullam omnis possimus quia rerum, voluptatum cumque doloribus in exercitationem. Rem dolorum laboriosam nam? Temporibus praesentium assumenda laudantium, reiciendis quaerat eligendi tempore porro odit corrupti sed alias perferendis exercitationem natus sequi facere repellat perspiciatis quia architecto quidem iusto deserunt. Quibusdam beatae assumenda dolore! Esse sit tenetur unde aspernatur iste, ea, sint numquam architecto, officiis rem tempore culpa eaque minus veritatis maxime consequatur dolore possimus adipisci consectetur commodi fugiat! Dignissimos illum accusamus ullam, doloremque libero dicta autem rem hic assumenda quisquam error sapiente, repudiandae quis distinctio dolores corporis officiis asperiores. Eveniet accusantium amet hic quasi molestias, iure at reprehenderit maxime animi! Accusamus temporibus qui expedita sunt libero molestiae error aut, itaque, eius excepturi obcaecati quia, illum neque deserunt perferendis! Natus ratione repellendus quam ipsa rerum eveniet dolor! Quo ipsa amet eveniet cumque eum unde ut blanditiis excepturi temporibus officia. Quis, repellendus nisi perferendis ducimus accusantium rerum sunt adipisci labore repellat nostrum asperiores reiciendis fugiat ipsa aut suscipit cum dolorem nulla aliquid, assumenda ratione ex accusamus impedit. Consequatur porro harum quae. Eligendi quas est aliquam, assumenda consequatur distinctio id nesciunt quis, eius, cupiditate placeat iure modi. Rem error quam perferendis possimus laborum quod sequi minima rerum ipsa nemo, corporis animi at quae corrupti non ex ullam dolorem. Rem distinctio facere itaque animi asperiores accusantium, et perspiciatis facilis. Ab, ipsum hic? Omnis optio sit praesentium odit, non eligendi alias expedita aspernatur eaque? Ex eaque accusantium quis necessitatibus aspernatur, illum quos sed quae consequuntur, perspiciatis excepturi velit magnam delectus autem molestias iste eos assumenda eligendi rerum architecto nesciunt illo dolor omnis cupiditate? Beatae blanditiis consectetur vitae delectus maxime iure. Amet possimus modi sint, ab libero commodi placeat hic laboriosam sed corporis eum alias voluptatibus debitis accusamus eveniet asperiores earum similique repellendus fuga, numquam voluptate? Odio, beatae, illo soluta nam alias ut quis excepturi quod cupiditate enim suscipit adipisci minima possimus saepe odit aliquid dolore veniam officiis, atque quo dolores quae eius repudiandae! Beatae omnis aliquid accusamus molestias asperiores distinctio labore id fuga minus architecto placeat minima, consectetur, autem officiis dolore sint, vero necessitatibus et libero voluptate vitae. Facilis laudantium nihil corporis illo quasi odit quas totam minima veniam, sequi dolore explicabo consequatur id quis quae in tempore. Odio cumque natus eveniet praesentium magnam, modi incidunt aliquid assumenda ea repellendus reiciendis quidem minima libero at! Odit neque officia qui voluptatum dicta eligendi vel incidunt velit pariatur consequatur reprehenderit distinctio placeat ratione similique omnis minima, totam ex facere ipsum repudiandae. Expedita officia nam nostrum sint vel voluptates at, dolores sunt ipsa ducimus maxime quidem. Consequuntur aliquid dicta hic odit ipsa nobis nihil ab sed quasi repellat, obcaecati placeat aperiam corporis. Ducimus doloribus ullam soluta sint quae dolores laboriosam explicabo rem recusandae dicta optio beatae laudantium, voluptatibus voluptas consequatur architecto consequuntur rerum iste. Repellendus nesciunt rerum, modi tempore nam dolore quasi officiis eos totam! Dolore, fugit recusandae quis, ipsam eius, assumenda nulla nesciunt et commodi cumque quas quod accusamus laudantium animi dolor deleniti autem sequi expedita quasi itaque esse similique! Ullam blanditiis sequi repudiandae, dolorem dolore esse ipsum aspernatur reprehenderit amet quia repellendus alias quibusdam, adipisci voluptatem nam sapiente, soluta corrupti maiores magnam? Facere commodi quia quo quas sit. Deleniti deserunt in asperiores, vero maiores accusantium delectus fugit, tenetur ipsam expedita iste nisi dolores necessitatibus incidunt nobis quisquam consequatur vitae doloribus molestiae nam. Esse iste ullam maiores! Illo consectetur excepturi nostrum. Cumque quibusdam delectus voluptates, voluptatum quos laborum explicabo, quod nam tenetur libero tempore. Accusantium adipisci suscipit excepturi voluptatibus eius repellendus iusto ullam sunt dolore! Velit fuga soluta voluptas accusantium itaque, inventore nobis doloribus sequi amet ut aperiam sed voluptatum eligendi veniam beatae quod. Animi ipsa necessitatibus, qui, similique eius dolorem doloribus doloremque consectetur nam, rem perspiciatis! Eveniet facere ab officia reiciendis, at eos! Doloribus nam commodi autem sunt quibusdam et error quis aliquid ducimus ullam quo perferendis asperiores aliquam officiis quaerat laudantium a explicabo esse ad saepe, consequatur aspernatur, placeat magni. Impedit doloribus consequuntur tempore harum reprehenderit explicabo animi soluta odio! Eos, ex dignissimos corrupti pariatur recusandae eveniet ipsam eaque ipsa, assumenda dolor cum, doloribus modi consequuntur officiis esse sequi. Provident quo ipsa repellendus quia veritatis iste consequatur quasi vero voluptate repellat praesentium aut fugiat optio eligendi illum dolore voluptatum porro recusandae officiis non atque quaerat, dicta possimus nulla? Laborum quo porro, nam culpa suscipit perferendis eum officiis natus molestias unde nisi. Voluptatibus nihil voluptates officia commodi eaque, unde, nulla reprehenderit, illo dolor totam libero inventore. Eligendi ipsam, cumque ea commodi sunt eveniet ratione quos atque quasi laudantium, delectus non accusantium aliquid doloremque, repudiandae numquam inventore voluptatem aperiam? Omnis quaerat aut totam libero nam facilis perferendis quisquam recusandae obcaecati autem ullam quasi, adipisci numquam dolores impedit magni cum ipsam tempore fugiat sequi? Ea in molestiae dolorem sunt laboriosam laborum iste ut exercitationem sed? Distinctio sed laborum repellat. Quis, amet accusamus? Deleniti rem voluptatibus beatae nemo voluptates exercitationem velit magni illum aliquid? Magnam facilis esse earum illum, natus obcaecati nostrum est molestiae voluptatem at ut non et alias eum dolores, libero officia dolor delectus veritatis totam adipisci doloribus ipsam atque possimus! Veniam vero quidem libero numquam illum eligendi animi, esse similique delectus excepturi? Unde incidunt quod atque nesciunt ex quam. Nulla, a soluta. Aperiam quaerat dolore tempora? Quisquam animi assumenda laboriosam nobis sed quo inventore, quis velit sequi eligendi perspiciatis molestias nulla pariatur mollitia! Asperiores quis fuga ratione quas eveniet reiciendis, beatae assumenda alias sunt illo incidunt tenetur, commodi dolorem sequi molestias eaque rerum repudiandae ex provident deleniti! Voluptas nemo expedita fuga ipsum amet maiores minima.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem perspiciatis est atque illum aliquid inventore ut
+          voluptatum, eaque saepe iure adipisci reiciendis recusandae voluptas ipsam, mollitia sit aspernatur odio
+          asperiores amet dolores doloremque? Molestias pariatur consectetur natus. Culpa error, assumenda amet odio
+          explicabo harum nesciunt ullam, vero impedit quos delectus nisi laborum quam fuga? Dicta optio corrupti cum
+          rerum, quasi ipsa atque vel, sequi placeat magnam labore illum ab sunt nesciunt consequuntur nulla eos! Eos,
+          veritatis quam ea eius accusantium numquam eveniet iste repudiandae illo quod. Quaerat, enim, assumenda
+          perferendis fuga ullam omnis possimus quia rerum, voluptatum cumque doloribus in exercitationem. Rem dolorum
+          laboriosam nam? Temporibus praesentium assumenda laudantium, reiciendis quaerat eligendi tempore porro odit
+          corrupti sed alias perferendis exercitationem natus sequi facere repellat perspiciatis quia architecto quidem
+          iusto deserunt. Quibusdam beatae assumenda dolore! Esse sit tenetur unde aspernatur iste, ea, sint numquam
+          architecto, officiis rem tempore culpa eaque minus veritatis maxime consequatur dolore possimus adipisci
+          consectetur commodi fugiat! Dignissimos illum accusamus ullam, doloremque libero dicta autem rem hic assumenda
+          quisquam error sapiente, repudiandae quis distinctio dolores corporis officiis asperiores. Eveniet accusantium
+          amet hic quasi molestias, iure at reprehenderit maxime animi! Accusamus temporibus qui expedita sunt libero
+          molestiae error aut, itaque, eius excepturi obcaecati quia, illum neque deserunt perferendis! Natus ratione
+          repellendus quam ipsa rerum eveniet dolor! Quo ipsa amet eveniet cumque eum unde ut blanditiis excepturi
+          temporibus officia. Quis, repellendus nisi perferendis ducimus accusantium rerum sunt adipisci labore repellat
+          nostrum asperiores reiciendis fugiat ipsa aut suscipit cum dolorem nulla aliquid, assumenda ratione ex
+          accusamus impedit. Consequatur porro harum quae. Eligendi quas est aliquam, assumenda consequatur distinctio
+          id nesciunt quis, eius, cupiditate placeat iure modi. Rem error quam perferendis possimus laborum quod sequi
+          minima rerum ipsa nemo, corporis animi at quae corrupti non ex ullam dolorem. Rem distinctio facere itaque
+          animi asperiores accusantium, et perspiciatis facilis. Ab, ipsum hic? Omnis optio sit praesentium odit, non
+          eligendi alias expedita aspernatur eaque? Ex eaque accusantium quis necessitatibus aspernatur, illum quos sed
+          quae consequuntur, perspiciatis excepturi velit magnam delectus autem molestias iste eos assumenda eligendi
+          rerum architecto nesciunt illo dolor omnis cupiditate? Beatae blanditiis consectetur vitae delectus maxime
+          iure. Amet possimus modi sint, ab libero commodi placeat hic laboriosam sed corporis eum alias voluptatibus
+          debitis accusamus eveniet asperiores earum similique repellendus fuga, numquam voluptate? Odio, beatae, illo
+          soluta nam alias ut quis excepturi quod cupiditate enim suscipit adipisci minima possimus saepe odit aliquid
+          dolore veniam officiis, atque quo dolores quae eius repudiandae! Beatae omnis aliquid accusamus molestias
+          asperiores distinctio labore id fuga minus architecto placeat minima, consectetur, autem officiis dolore sint,
+          vero necessitatibus et libero voluptate vitae. Facilis laudantium nihil corporis illo quasi odit quas totam
+          minima veniam, sequi dolore explicabo consequatur id quis quae in tempore. Odio cumque natus eveniet
+          praesentium magnam, modi incidunt aliquid assumenda ea repellendus reiciendis quidem minima libero at! Odit
+          neque officia qui voluptatum dicta eligendi vel incidunt velit pariatur consequatur reprehenderit distinctio
+          placeat ratione similique omnis minima, totam ex facere ipsum repudiandae. Expedita officia nam nostrum sint
+          vel voluptates at, dolores sunt ipsa ducimus maxime quidem. Consequuntur aliquid dicta hic odit ipsa nobis
+          nihil ab sed quasi repellat, obcaecati placeat aperiam corporis. Ducimus doloribus ullam soluta sint quae
+          dolores laboriosam explicabo rem recusandae dicta optio beatae laudantium, voluptatibus voluptas consequatur
+          architecto consequuntur rerum iste. Repellendus nesciunt rerum, modi tempore nam dolore quasi officiis eos
+          totam! Dolore, fugit recusandae quis, ipsam eius, assumenda nulla nesciunt et commodi cumque quas quod
+          accusamus laudantium animi dolor deleniti autem sequi expedita quasi itaque esse similique! Ullam blanditiis
+          sequi repudiandae, dolorem dolore esse ipsum aspernatur reprehenderit amet quia repellendus alias quibusdam,
+          adipisci voluptatem nam sapiente, soluta corrupti maiores magnam? Facere commodi quia quo quas sit. Deleniti
+          deserunt in asperiores, vero maiores accusantium delectus fugit, tenetur ipsam expedita iste nisi dolores
+          necessitatibus incidunt nobis quisquam consequatur vitae doloribus molestiae nam. Esse iste ullam maiores!
+          Illo consectetur excepturi nostrum. Cumque quibusdam delectus voluptates, voluptatum quos laborum explicabo,
+          quod nam tenetur libero tempore. Accusantium adipisci suscipit excepturi voluptatibus eius repellendus iusto
+          ullam sunt dolore! Velit fuga soluta voluptas accusantium itaque, inventore nobis doloribus sequi amet ut
+          aperiam sed voluptatum eligendi veniam beatae quod. Animi ipsa necessitatibus, qui, similique eius dolorem
+          doloribus doloremque consectetur nam, rem perspiciatis! Eveniet facere ab officia reiciendis, at eos!
+          Doloribus nam commodi autem sunt quibusdam et error quis aliquid ducimus ullam quo perferendis asperiores
+          aliquam officiis quaerat laudantium a explicabo esse ad saepe, consequatur aspernatur, placeat magni. Impedit
+          doloribus consequuntur tempore harum reprehenderit explicabo animi soluta odio! Eos, ex dignissimos corrupti
+          pariatur recusandae eveniet ipsam eaque ipsa, assumenda dolor cum, doloribus modi consequuntur officiis esse
+          sequi. Provident quo ipsa repellendus quia veritatis iste consequatur quasi vero voluptate repellat
+          praesentium aut fugiat optio eligendi illum dolore voluptatum porro recusandae officiis non atque quaerat,
+          dicta possimus nulla? Laborum quo porro, nam culpa suscipit perferendis eum officiis natus molestias unde
+          nisi. Voluptatibus nihil voluptates officia commodi eaque, unde, nulla reprehenderit, illo dolor totam libero
+          inventore. Eligendi ipsam, cumque ea commodi sunt eveniet ratione quos atque quasi laudantium, delectus non
+          accusantium aliquid doloremque, repudiandae numquam inventore voluptatem aperiam? Omnis quaerat aut totam
+          libero nam facilis perferendis quisquam recusandae obcaecati autem ullam quasi, adipisci numquam dolores
+          impedit magni cum ipsam tempore fugiat sequi? Ea in molestiae dolorem sunt laboriosam laborum iste ut
+          exercitationem sed? Distinctio sed laborum repellat. Quis, amet accusamus? Deleniti rem voluptatibus beatae
+          nemo voluptates exercitationem velit magni illum aliquid? Magnam facilis esse earum illum, natus obcaecati
+          nostrum est molestiae voluptatem at ut non et alias eum dolores, libero officia dolor delectus veritatis totam
+          adipisci doloribus ipsam atque possimus! Veniam vero quidem libero numquam illum eligendi animi, esse
+          similique delectus excepturi? Unde incidunt quod atque nesciunt ex quam. Nulla, a soluta. Aperiam quaerat
+          dolore tempora? Quisquam animi assumenda laboriosam nobis sed quo inventore, quis velit sequi eligendi
+          perspiciatis molestias nulla pariatur mollitia! Asperiores quis fuga ratione quas eveniet reiciendis, beatae
+          assumenda alias sunt illo incidunt tenetur, commodi dolorem sequi molestias eaque rerum repudiandae ex
+          provident deleniti! Voluptas nemo expedita fuga ipsum amet maiores minima.
      </div>
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="index.js"></script>
+
 </html>
