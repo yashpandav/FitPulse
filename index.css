@@ -10,13 +10,13 @@ body{
 .nav-dark{
      border-bottom: 3px solid #a2d821;
      color: #969c3a;
-     background-color: #100F11;
+     background-color: transparent;
 }
 
 .nav-white{
      border-bottom: 3px solid #540514;
      color: #100F11;
-     background-color: #EAE1EB ;
+     background-color: transparent ;
 }
 
 #logoIMG{
@@ -50,7 +50,7 @@ a.active{
      margin: 1rem;
 }
 
-#home{
+.main{
      background-image: url('Image/one.jpg');
      background-size: cover;
      width: 100%;
@@ -63,6 +63,7 @@ a.active{
 }
 
 .main-content h1{
+     animation: heroAni 1.6s ease-in-out 0.2s 1;
      font-family:'Bebas Neue';
      letter-spacing: 0.6vw;
      font-size: 55px;
@@ -71,7 +72,19 @@ a.active{
      color: white;
 }
 
+@keyframes heroAni {
+     0%{
+          transform: translateX(-50%);
+          opacity: 0;
+     }
+     100%{
+          transform: translateX(0);
+          opacity: 1;
+     }
+}
+
 .main-extra{
+     animation: extraAni 1.6s ease-in-out 0.2s 1;
      gap: 1.2rem;
      display: flex;
      align-items: center;
@@ -80,8 +93,77 @@ a.active{
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+@keyframes extraAni {
+     0%{
+          transform: translateX(50%);
+          opacity: 0;
+     }
+     100%{
+          transform: translateX(0);
+          opacity: 1;
+     }
+}
+
+
 #line{
      width:6rem;
      height: 0.2rem;
      background-color: orangered;
+}
+
+.second-main{
+     height: 30rem;
+     width: 100%;
+     margin-top: 3rem;
+}
+
+.need-black{
+     color: aliceblue;
+     text-shadow: 1px 1px 1px aliceblue , -1px 1px 1px aliceblue ,1px -1px 1px aliceblue ,-1px -1px 1px aliceblue ;
+     font-weight: 500;
+     text-align: center;
+}
+
+.need-white{
+     color: #321F44;
+     text-shadow: 1px 1px 1px #321F44 , -1px 1px 1px #321F44 ,1px -1px 1px #321F44 ,-1px -1px 1px #321F44 ;
+     font-weight: 500;
+     text-align: center;
+}
+
+.card{
+     margin-top: 10px;
+     margin-bottom: 10px;
+     background-color: transparent;
+     color: wheat;
+     height: 380px;
+     text-align: center;
+     border: none;
+}
+
+.card h4{
+     color: orangered;
+     font-weight: 500;     
+}
+
+.card p{
+     letter-spacing: 0.5px;
+     word-spacing: 0.7px;
+     color: rgb(178, 190, 202);
+     line-height: 29px;
+
+}
+
+.card img{
+     box-shadow: 2px 2px 3px red , -2px 2px 3px red ,2px -2px 3px red ,-2px -2px 3px red ;
+     width: 8%;
+     margin-top: 5px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+@media screen and (max-width: 500px){
+     .card img{
+          width: 19%;
+     }
 }
