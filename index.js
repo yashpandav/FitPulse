@@ -3,7 +3,7 @@ let logo = document.getElementById("logoIMG");
 let navWhite = document.querySelector("nav");
 let needWhite = document.querySelector(".second-main h1");
 let cardP = document.querySelector(".card p");
-
+let slogan = document.querySelector("#fitness h4");
 let click = false;
 
 mode.addEventListener("click", () => {
@@ -14,8 +14,10 @@ mode.addEventListener("click", () => {
           logo.src = "logo/white-logo.png";
           needWhite.classList.remove("need-black");
           needWhite.classList.add("need-white");
-          cardP.style.color = "#100F11"
+          cardP.style.color = "#100F11";
+          slogan.style.color = "#321F44";
           click = true;
+          active();
      } else {
           document.body.style.backgroundColor = "#100F11";
           navWhite.classList.remove("nav-white");
@@ -24,12 +26,13 @@ mode.addEventListener("click", () => {
           needWhite.classList.remove("need-white");
           needWhite.classList.add("need-black");
           cardP.style.color = "rgb(178, 190, 202)";
+          slogan.style.color = "orange";
           click = false;
+          active();
      }
 });
 
-let navLinks = document.querySelectorAll("nav a");
-window.addEventListener("scroll", ()=>{
+function active(){
      let navLinks = document.querySelectorAll("nav a");
      if(navLinks[1].classList.contains("active")){
           navWhite.style.backgroundColor = "transparent";
@@ -41,9 +44,9 @@ window.addEventListener("scroll", ()=>{
           else{
                navWhite.style.backgroundColor = "#EAE1EB";
           }
-
      }
-})
+}
+window.addEventListener("scroll", active);
 
 //#969c3a  :: GOLDEN
 //#6b3a9c  :: PURPLE
