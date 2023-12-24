@@ -24,12 +24,12 @@ body{
      margin-left: 1rem;
 }
 
-ul{
+nav ul{
      list-style-type: none;
      margin: auto;
 }
 
-li{
+nav li{
      padding-left: 5rem; 
 }
 
@@ -164,14 +164,39 @@ a.active{
      margin-right: auto;
 }
 
+.thoughts{
+     height: auto;
+     width: auto;
+     color : whitesmoke;
+     text-align: center;
+     margin-bottom: 3rem;
+}
+
+@media screen and (min-width:500px){
+     .thoughts{
+          margin-top: -4rem;
+     }
+}
+
+.thoughts .line{
+     width:5rem;
+     height: 0.3rem;
+     background-color: orangered;
+}
+
+.thoughts h3 , h2{
+     font-size: 25px;
+     padding: 0.5rem;
+}
+
+
 /* FITNESS SECTION */
 
 /* main for fitness */
-#fitness{
+#main-fitness{
      background: url('Image/fullGym.png');
      background-size: cover;
      background-attachment: fixed;
-
 }
 .fitness-head{
      display: flex;
@@ -193,7 +218,6 @@ a.active{
 
 
 /* the container gym (grid) */
-
 
 .gym{
      width: 100%;
@@ -254,6 +278,11 @@ a.active{
 
 .more-about i{
      font-size: large;
+     transition: 5s ease-in-out 0;
+}
+
+i:hover{
+     transform : scale(1.1);
 }
 
 .aniForGymInfo{
@@ -270,6 +299,7 @@ a.active{
           opacity: 1;
      }
 }
+
 .aniForGymIntro{
      animation: gymIntroAni 1s ease-out 1;
 }
@@ -292,6 +322,68 @@ a.active{
      font-family: 'Quicksand';
 }
 
+
+.yoga{
+     display: grid;
+     place-items: center;
+     grid-template-areas: 
+          'one two'
+     ;
+     background: url('Image/yogaback.jpg')   ;
+     background-size: cover;
+     height: auto;
+     width: auto;
+}
+
+.yoga .yogaOne{
+     grid-area: one;
+     width: 100%;
+     margin-left: 3rem;
+}
+
+.yoga .yogaTwo{
+     margin-top: 2rem;
+     width: 80%;
+     height: auto;
+     grid-area: two;
+     margin-right: 4rem;
+}
+
+#imgYoga{
+     margin-left: 3rem;
+     width: 70%;
+}
+
+.info{
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     gap : 1.3rem;
+}
+
+.yogaInfo-img{
+     height: 5rem;
+     width: 5rem;
+     background-color: rgba(67, 240, 104, 0.667);
+}
+
+.yogaInfo-img span{
+     font-size: 50px;
+}
+
+.h4-info{
+     border-bottom: 1px solid red;
+}
+
+.yoga-detail{
+     margin-left: 6.3rem;
+     margin-top: -1rem;
+}
+
+.yoga-detail ul{
+     margin-left: 2rem;
+     margin-top: -0.6rem;
+}
 @media screen and (max-width:500px) {
      .card img{
           width: 19%;
@@ -311,6 +403,14 @@ a.active{
           background-color: '';
      }
 
+     .thoughts{
+          margin-top: 3rem;
+     }
+     .thoughts h3 , h2{
+          font-size: 20px;
+          padding: 0.5rem;
+     }
+     
      .fitness-head{
           display: '';
           justify-content: '';
@@ -324,5 +424,26 @@ a.active{
 
      #just{
           margin-top: 6.2rem;
+     }
+
+     .yoga{
+          grid-template-areas: 
+          'two'
+          'one';
+     }
+
+     #imgYoga{
+          margin-left: 0rem;
+          width: 80%;
+     }
+     
+     .yoga .yogaTwo{
+          margin-top: 2rem;
+          width: 100%;
+          margin-right: 0rem;
+     }
+
+     .info{
+          gap : 1rem;
      }
 }
