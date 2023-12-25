@@ -4,18 +4,24 @@ let navWhite = document.querySelector("nav");
 let needWhite = document.querySelector(".second-main h1");
 let cardP = document.querySelectorAll(".card p");
 let slogan = document.querySelector("#fitness h4");
+let thought = document.querySelectorAll(".thoughts");
 let click = false;
+let h2 = document.querySelectorAll(".thoughts h2");
+
 
 mode.addEventListener("click", () => {
      if (click === false) {
           navWhite.classList.remove("nav-dark");
           navWhite.classList.add("nav-white");
-          document.body.style.backgroundColor = "#EAE1EB";
+          document.body.style.backgroundColor = "#FFFAFA";
           logo.src = "logo/white-logo.png";
           needWhite.classList.remove("need-black");
           needWhite.classList.add("need-white");
           for(let i = 0; i < cardP.length; i++){
                cardP[i].style.color = "#100F11";
+          }
+          for(let i = 0; i < h2.length; i++){
+               h2[i].style.color = "#321F44";
           }
           slogan.style.color = "#321F44";
           click = true;
@@ -29,6 +35,9 @@ mode.addEventListener("click", () => {
           needWhite.classList.add("need-black");
           for(let i = 0; i < cardP.length; i++){
                cardP[i].style.color = "rgb(178, 190, 202)";
+          }
+          for(let i = 0; i < h2.length; i++){
+               h2[i].style.color = "#f5f5f5";
           }
           slogan.style.color = "orange";
           click = false;
