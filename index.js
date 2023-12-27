@@ -104,7 +104,7 @@ for(let gym of mainGym){
                introGym.classList.remove("aniForGymIntro"); 
                introGym.classList.add("visibilityForIntro");
                introGym.classList.remove("visible");    
-             
+
                outroGym.style.setProperty("visibility" , "hidden");
                outroGym.classList.remove("aniForGymInfo"); 
                outroGym.classList.add("visibilityForIntro");
@@ -112,6 +112,19 @@ for(let gym of mainGym){
      })
 }
 
+let membership = document.querySelectorAll(".member-info");
+for(let allMembers of membership){
+          allMembers.addEventListener("mouseover", () =>{
+                    let member = allMembers.childNodes[3];
+                    member.classList.remove("visibilityForIntro");
+                    member.classList.add("visible");
+          })
+          allMembers.addEventListener("mouseout", () =>{ 
+               let member = allMembers.childNodes[3];
+               member.classList.remove("visible");
+               member.classList.add("visibilityForIntro");
+     }
+)}
 
 
 //#969c3a  :: GOLDEN
