@@ -113,14 +113,37 @@ for(let gym of mainGym){
 }
 
 let membership = document.querySelectorAll(".member-info");
+let allPrice = document.querySelectorAll(".price");
 for(let allMembers of membership){
           allMembers.addEventListener("mouseover", () =>{
                     let member = allMembers.childNodes[3];
+                    let sibilingPrice = allMembers.previousSibling;
+                    let amount = sibilingPrice.querySelector(".amount");
+                    let perMonth = sibilingPrice.querySelector(".per");
+                    amount.classList.add("priceAni");
+                    setTimeout(()=>{
+                         perMonth.classList.remove("visibilityForIntro");
+                         perMonth.classList.add("visible");
+                         perMonth.classList.add("perAni");
+                         perMonth.style.removeProperty("visibility");
+                    },200);
+                    sibilingPrice.classList.remove("visibilityForIntro");
+                    sibilingPrice.classList.add("visible");
                     member.classList.remove("visibilityForIntro");
                     member.classList.add("visible");
           })
           allMembers.addEventListener("mouseout", () =>{ 
                let member = allMembers.childNodes[3];
+               let sibilingPrice = allMembers.previousSibling;                    
+               let amount = sibilingPrice.querySelector(".amount");
+               let perMonth = sibilingPrice.querySelector(".per");
+               amount.classList.remove("priceAni");       
+               perMonth.classList.remove("perAni"); 
+               perMonth.style.setProperty("visibility", "hidden");
+               perMonth.classList.remove("visible");            
+               perMonth.classList.add("visibilityForIntro");
+               sibilingPrice.classList.remove("visible");
+               sibilingPrice.classList.add("visibilityForIntro");
                member.classList.remove("visible");
                member.classList.add("visibilityForIntro");
      }
