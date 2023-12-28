@@ -4,10 +4,12 @@
 }
 
 body {
+     scroll-behavior: smooth;
      background-color: #100F11;
 }
 
-/* NAVBAR */
+/*---------------------------------NAVBAR-------------------------------*/
+
 .nav-dark {
      border-bottom: 3px solid #a2d821;
      color: #969c3a;
@@ -51,7 +53,7 @@ a.active {
      margin: 1rem;
 }
 
-/* HERO BACK MAIN */
+/*---------------------------------HERO BACK MAIN-------------------------------*/
 
 .main {
      background-image: url('Image/one.jpg');
@@ -116,7 +118,7 @@ a.active {
      background-color: orangered;
 }
 
-/* WHY WE NEED GYM? */
+/*----------------WHY WE NEED GYM ?------------------------------------------------*/
 
 .second-main {
      height: auto;
@@ -196,7 +198,7 @@ h2 {
 
 /* FITNESS SECTION */
 
-/* main for fitness */
+/*------------------------------STRTING FITNESS SECTION----------------------------------*/
 #main-fitness {
      background: url('Image/fullGym.png');
      background-size: cover;
@@ -224,7 +226,7 @@ h2 {
 }
 
 
-/* the container gym (grid) */
+/*------------------------------GYM CLASS----------------------------------*/
 
 .gym {
      width: 100%;
@@ -334,6 +336,8 @@ i:hover {
 }
 
 
+/*------------------------------YOGA CLASS----------------------------------*/
+
 .yoga {
      display: grid;
      place-items: center;
@@ -425,7 +429,7 @@ i:hover {
      padding-bottom: 2rem;
 }
 
-/*----------------------------------------------------------------*/
+/*-----------------------------MEMBERSHIP-----------------------------------*/
 
 
 .main-member{
@@ -485,6 +489,86 @@ i:hover {
      background-size: cover;
 }
 
+/* --------------------------------MEMBERSHIP PRICE --------------------------------*/
+.price{
+     position: relative;
+     z-index: 1;
+}
+
+.amount{
+     border-left: 5px solid whitesmoke;
+     border-bottom-left-radius: 50% 100%;
+     border-top-left-radius: 0% 10%;
+     border-bottom: 5px solid whitesmoke;
+     margin-left: 12rem;
+     background-color: #FFFB7D;
+     height: 2.9rem;
+     width: 7.8rem;
+}
+
+.amount h1{
+     font-size: 2.3rem;
+     text-align: center;
+     padding-left: 1.6rem;
+}
+
+.priceAni{
+     animation: priceAni 2s ease 1;
+}
+
+@keyframes priceAni {
+     from{
+          transform: translateX(50%);
+          opacity: 0;
+     }
+     to{
+          opacity: 1;
+          transform: translateX(0%);
+     }
+}
+
+@keyframes perAni {
+     from{
+          transform: translateX(50%);
+          opacity: 0;
+     }
+     to{
+          opacity: 1;
+          transform: translateX(0%);
+     }
+}
+
+
+.price .per{
+     z-index: -1;
+     position: relative;
+     margin-top: -0.1rem;
+     margin-left: 14.49rem;
+     background-color:#100F11;
+     border-left: 5px solid whitesmoke;
+     border-bottom: 5px solid whitesmoke;
+     border-bottom-left-radius: 50% 100%;
+     border-top-left-radius: 0% 10%;
+     height: 2.5rem;
+     text-wrap: wrap;
+}
+
+.perAni{
+     animation: perAni 2s ease 1;
+}
+
+.per p{
+     font-size: 0.9rem;
+     color: whitesmoke;
+     text-align: center;
+     padding-top: 0.5rem;
+     padding-left: 0.8rem;
+}
+
+
+
+/*-----------------------------MRMBERSHIP INFO-----------------------------------*/
+
 .membership h2{
      background: rgb(0,163,204);
      background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
@@ -497,13 +581,12 @@ i:hover {
 .member-info{
      background: linear-gradient(90deg, rgba(131, 58, 180, 0.683) 0%, rgba(253,29,29, 0.683) 50%, rgba(252,176,69, 0.683) 100%);
      /* background-image: linear-gradient(to top, rgba(110, 187, 234, 0.562) 0%, rgb(226, 235, 240,0.562) 100%);      */
-     margin-top: 16.48rem;
+     margin-top: 11.2rem;
      position: relative;
      height: 3.5rem;
      width: 100%;
      transition: all 1s;
 }
-
 .para-msg{
      height: 3.5rem;
      background: linear-gradient(90deg, rgba(131, 58, 180, 0.683) 0%, rgba(253,29,29, 0.683) 50%, rgba(252,176,69, 0.683) 100%);
@@ -514,7 +597,7 @@ i:hover {
      background: rgb(131,58,180);
      background-color: #85FFBD;
      background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-          background-clip: text;
+     background-clip: text;
      -webkit-text-fill-color: transparent;
      padding-top: 1rem;
      border-top : 1px solid #100F11;
@@ -526,6 +609,9 @@ i:hover {
 .member-info:hover{
           transform: translateY(-100%);
 }
+
+
+/*------------------------------MEDIA-SCREEN-------------------------------*/
 
 @media screen and (max-width:500px) {
      .card img {
