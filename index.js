@@ -6,8 +6,9 @@ let cardP = document.querySelectorAll(".card p");
 let slogan = document.querySelector("#fitness h4");
 let thought = document.querySelectorAll(".thoughts");
 let click = false;
-let h2 = document.querySelectorAll(".thoughts h2");
-
+let thoughtH2 = document.querySelectorAll(".thoughts h2");
+let selfcare = document.querySelector(".selfcare")
+let joinNow = document.querySelector(".joinNow h4");
 
 mode.addEventListener("click", () => {
      if (click === false) {
@@ -20,10 +21,12 @@ mode.addEventListener("click", () => {
           for(let i = 0; i < cardP.length; i++){
                cardP[i].style.color = "#100F11";
           }
-          for(let i = 0; i < h2.length; i++){
-               h2[i].style.color = "#321F44";
+          for(let i = 0; i < thoughtH2.length; i++){
+               thoughtH2[i].style.color = "#321F44";
           }
           slogan.style.color = "#321F44";
+          selfcare.style.color = "#321F44";
+          joinNow.style.color = "#321F44";
           click = true;
           active();
      } else {
@@ -36,10 +39,12 @@ mode.addEventListener("click", () => {
           for(let i = 0; i < cardP.length; i++){
                cardP[i].style.color = "rgb(178, 190, 202)";
           }
-          for(let i = 0; i < h2.length; i++){
-               h2[i].style.color = "#f5f5f5";
+          for(let i = 0; i < thoughtH2.length; i++){
+               thoughtH2[i].style.color = "#f5f5f5";
           }
           slogan.style.color = "orange";
+          selfcare.style.color = "#f5f5f5";
+          joinNow.style.color = "#f5f5f5";
           click = false;
           active();
      }
