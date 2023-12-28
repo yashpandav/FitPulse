@@ -467,10 +467,12 @@ i:hover {
 }
 
 .membership{
+     box-shadow: 10px 10px 10px #d5e8e9,-10px 10px 10px #d5e8e9,10px -10px 10px #d5e8e9,-10px -10px 10px #d5e8e9;
      margin: 1rem;
      width: 80%;
      height: 20rem;
 }
+
 #member1{
      grid-area: memberone;
      background-image: url('Image/yoga.jpg');
@@ -503,7 +505,7 @@ i:hover {
      margin-left: 12rem;
      background-color: #FFFB7D;
      height: 2.9rem;
-     width: 7.8rem;
+     width: auto;
 }
 
 .amount h1{
@@ -517,11 +519,12 @@ i:hover {
 }
 
 @keyframes priceAni {
-     from{
+     0%{
           transform: translateX(50%);
           opacity: 0;
      }
-     to{
+
+     100%{
           opacity: 1;
           transform: translateX(0%);
      }
@@ -550,7 +553,6 @@ i:hover {
      border-bottom-left-radius: 50% 100%;
      border-top-left-radius: 0% 10%;
      height: 2.5rem;
-     text-wrap: wrap;
 }
 
 .perAni{
@@ -587,6 +589,12 @@ i:hover {
      width: 100%;
      transition: all 1s;
 }
+
+.member-info:hover{
+     transform: translateY(-100%);
+}
+
+
 .para-msg{
      height: 3.5rem;
      background: linear-gradient(90deg, rgba(131, 58, 180, 0.683) 0%, rgba(253,29,29, 0.683) 50%, rgba(252,176,69, 0.683) 100%);
@@ -605,11 +613,6 @@ i:hover {
      font-size: 19px;
      padding-left: 1rem;
 }
-
-.member-info:hover{
-          transform: translateY(-100%);
-}
-
 
 /*------------------------------MEDIA-SCREEN-------------------------------*/
 
@@ -647,7 +650,17 @@ i:hover {
           align-items: '';
           margin-top: 1.3rem;
      }
-
+     
+     .fitness-head .line {
+          width: 0rem;
+          height: 0rem;
+     }
+     
+     .fitness-head h4 {
+          font-size: 21px;
+     }
+     
+     
      .more-about {
           margin-top: 4.2rem;
      }
@@ -691,9 +704,59 @@ i:hover {
           margin-top: -0.6rem;
      }
 
+     .selfcare{
+          margin-bottom: 1.5rem;
+     }
+     
+     .selfcare i{
+          padding: 0rem;
+          padding-bottom: 1.5rem;
+     }
+
+     .selfcare h2{
+          font-size: 17px;
+          text-align: center;
+     }
+
      .memberships-container{
           grid-template-areas: 
                'memberone' 'membertwo' 'memberthree'
           ;
      }
+
+     .para-msg p{
+          font-size: 15px;
+     }
+
+     .amount{
+          margin-left: 38vw;
+     }
+
+     .price .per{
+          margin-top: -0.1rem;
+          margin-left: 50vw;
+     }
+
+     .per p{
+          font-size: 0.9rem;
+          text-align: center;
+          padding-top: 0.3rem;
+          padding-left: 0.3rem;
+     }
+     
+     .membership{
+          margin:0rem;
+          margin-top: 1.9rem;
+          width: 90%;
+     }
+
+     .amount h1{
+          font-size: 2rem;
+          padding-left: 0.7rem;
+     }
+
+     .member-info{
+          margin-top: 11.2rem;
+     }
+     
 }
