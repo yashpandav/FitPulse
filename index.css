@@ -222,7 +222,7 @@ h2 {
 .fitness-head h4 {
      text-align: center;
      font-size: 30px;
-     color: rgb(104, 37, 94);
+     color: #68255e;
 }
 
 
@@ -464,28 +464,33 @@ i:hover {
      grid-template-areas: 
           'memberone membertwo memberthree'
      ;
+     transition: scale 350ms ease , opacity 350ms linear;
 }
 
 .membership{
-     box-shadow: 10px 10px 10px #d5e8e9,-10px 10px 10px #d5e8e9,10px -10px 10px #d5e8e9,-10px -10px 10px #d5e8e9;
      margin: 1rem;
      width: 80%;
      height: 20rem;
+     transition: transform 350ms ease, opacity 350ms linear;
 }
 
+
 #member1{
+     box-shadow: 10px 10px 10px rgb(130, 130, 130), -10px 10px 10px rgb(130, 130, 130), 10px -10px 10px rgb(130, 130, 130), -10px -10px 10px rgb(130, 130, 130);     
      grid-area: memberone;
      background-image: url('Image/yoga.jpg');
      background-size: cover;
      background-position-y: center;
 }
 #member2{
+     box-shadow: 10px 10px 10px rgb(130, 130, 130), -10px 10px 10px rgb(130, 130, 130), 10px -10px 10px rgb(130, 130, 130), -10px -10px 10px rgb(130, 130, 130);     
      grid-area: membertwo;
      background-image: url('Image/images (3).png');
      background-size: cover;
      background-position: 30%;
 }
 #member3{
+     box-shadow: 10px 10px 10px rgb(130, 130, 130), -10px 10px 10px rgb(130, 130, 130), 10px -10px 10px rgb(130, 130, 130), -10px -10px 10px rgb(130, 130, 130);     
      grid-area: memberthree;
      background-image: url('Image/yogagym.png');
      background-size: cover;
@@ -567,8 +572,6 @@ i:hover {
      padding-left: 0.8rem;
 }
 
-
-
 /*-----------------------------MRMBERSHIP INFO-----------------------------------*/
 
 .membership h2{
@@ -594,7 +597,6 @@ i:hover {
      transform: translateY(-100%);
 }
 
-
 .para-msg{
      height: 3.5rem;
      background: linear-gradient(90deg, rgba(131, 58, 180, 0.683) 0%, rgba(253,29,29, 0.683) 50%, rgba(252,176,69, 0.683) 100%);
@@ -614,6 +616,73 @@ i:hover {
      padding-left: 1rem;
 }
 
+/*-----------------------------TRAINEE-----------------------------------*/
+
+#trainee{
+     margin-top: 4rem;
+}
+
+.trainee{
+     height: 30rem;
+     width: 100%;
+     background: linear-gradient(to bottom, #100F11, rgb(255, 255, 255,0) , #100F11),url('Image/glow_trainee.jpg');
+     background-size: cover;
+}
+
+.trainee-head{
+     margin-top: 3rem;
+     margin-left: 2rem;
+     height: auto;
+     width: 23rem;
+}
+
+.trainee-head h4{
+     color : #a2d821;
+}
+
+.trainee-head p{
+     margin-top: 2rem;
+     color : wheat;
+     text-align: justify;
+     font-family: 'Raleway';
+}
+
+.trainee-images{
+     margin-left: 27rem;
+}
+
+#trainee1{     
+     position: relative;
+     top: -13rem;
+     left: -4rem;
+     height: 29rem;
+     z-index: 1;
+}
+
+#trainee2{
+     position: relative;
+     top: -12rem;
+     left: -10rem;
+     height: 21rem;
+}
+
+#trainee3{
+     position: relative;
+     top: -13rem;
+     left: -14rem;
+     height: 23rem;
+}
+
+#trainee4{
+     position: relative;
+     top: -38rem;
+     left: 32rem;
+     height: 22rem;
+}
+
+.name{
+     color: whitesmoke;
+}
 /*------------------------------MEDIA-SCREEN-------------------------------*/
 
 @media screen and (max-width:500px) {
