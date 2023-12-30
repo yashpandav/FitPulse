@@ -6,7 +6,10 @@ let cardP = document.querySelectorAll(".card p");
 let thought = document.querySelectorAll(".thoughts");
 let thoughtH2 = document.querySelectorAll(".thoughts h2");
 let selfcare = document.querySelector(".selfcare")
-let joinNow = document.querySelector(".joinNow h4");
+let joinNow = document.querySelectorAll(".joinNow h4");
+let traineeBack = document.querySelector(".trainee");
+let traineeH4 = document.querySelector(".trainee-head h4");
+let traineePara = document.querySelector(".trainee-head p")
 let click = false;
 
 /* DARK MODE AND WHITE MOMDE */
@@ -25,7 +28,12 @@ mode.addEventListener("click", () => {
                thoughtH2[i].style.color = "#321F44";
           }
           selfcare.style.color = "#321F44";
-          joinNow.style.color = "#321F44";
+          joinNow.forEach(function (joinNow) {
+               joinNow.style.color = "#321F44";
+          });
+          traineeBack.style.background = "linear-gradient(to bottom, rgba(255, 250, 250,0.95), rgb(255, 255, 255,0.6) , rgba(255, 250, 250, 0.95)),url('Image/glow_trainee.jpg')";
+          traineeH4.style.color = "#103054";
+          traineePara.style.color = "black"
           click = true;
           active();
      } else {
@@ -41,8 +49,13 @@ mode.addEventListener("click", () => {
           for (let i = 0; i < thoughtH2.length; i++) {
                thoughtH2[i].style.color = "#f5f5f5";
           }
-          selfcare.style.color = "#f5f5f5";
-          joinNow.style.color = "#f5f5f5";
+          selfcare.style.color = "#f5f5f5";          
+          joinNow.forEach(function (joinNow) {
+               joinNow.style.color = "#f5f5f5";
+          });
+          traineeBack.style.background = "linear-gradient(to bottom, #100F11, rgba(255, 255, 255, 0) , #100F11),url('Image/glow_trainee.jpg')";
+          traineeH4.style.color = "rgb(67, 132, 218)";
+          traineePara.style.color = "whitesmoke";
           click = false;
           active();
      }
@@ -63,6 +76,7 @@ function active() {
           }
      }
 }
+
 window.addEventListener("scroll", active);
 
 
@@ -178,7 +192,6 @@ for (let allMembers of membership) {
      }
      )
 }
-
 
 //#969c3a  :: GOLDEN
 //#6b3a9c  :: PURPLE
