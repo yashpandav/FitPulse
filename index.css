@@ -1,6 +1,7 @@
 * {
      margin: 0;
      padding: 0;
+     box-sizing: border-box;
 }
 
 body {
@@ -476,21 +477,21 @@ i:hover {
 
 
 #member1{
-     box-shadow: 10px 10px 10px rgb(130, 130, 130), -10px 10px 10px rgb(130, 130, 130), 10px -10px 10px rgb(130, 130, 130), -10px -10px 10px rgb(130, 130, 130);     
+     box-shadow: 1px 1px 12px rgb(130, 130, 130), -1px 1px 12px rgb(130, 130, 130), 1px -1px 12px rgb(130, 130, 130), -1px -1px 12px rgb(130, 130, 130);     
      grid-area: memberone;
      background-image: url('Image/yoga.jpg');
      background-size: cover;
      background-position-y: center;
 }
 #member2{
-     box-shadow: 10px 10px 10px rgb(130, 130, 130), -10px 10px 10px rgb(130, 130, 130), 10px -10px 10px rgb(130, 130, 130), -10px -10px 10px rgb(130, 130, 130);     
+     box-shadow: 1px 1px 12px rgb(130, 130, 130), -1px 1px 12px rgb(130, 130, 130), 1px -1px 12px rgb(130, 130, 130), -1px -1px 12px rgb(130, 130, 130);     
      grid-area: membertwo;
      background-image: url('Image/images (3).png');
      background-size: cover;
      background-position: 30%;
 }
 #member3{
-     box-shadow: 10px 10px 10px rgb(130, 130, 130), -10px 10px 10px rgb(130, 130, 130), 10px -10px 10px rgb(130, 130, 130), -10px -10px 10px rgb(130, 130, 130);     
+     box-shadow: 1px 1px 12px rgb(130, 130, 130), -1px 1px 12px rgb(130, 130, 130), 1px -1px 12px rgb(130, 130, 130), -1px -1px 12px rgb(130, 130, 130);     
      grid-area: memberthree;
      background-image: url('Image/yogagym.png');
      background-size: cover;
@@ -729,7 +730,7 @@ i:hover {
      margin-top: 2rem;
 }
 
-@keyframes trainee1 {
+/* @keyframes trainee1 {
      from{
           transform: translateY(50%);
           opacity: 0;
@@ -768,6 +769,52 @@ i:hover {
           transform: translateY(0%);
           opacity: 1;
      }
+} */
+
+/*------------------------------TESTIMONIAL-------------------------------*/
+
+.testimonial{
+     height: auto;
+     width: 100%;
+     display: grid;
+     place-content: center;
+     grid-template-areas: 
+          'one two three'
+          'four five six';
+     gap: 20px;     
+     background-color: rebeccapurple;
+
+}
+
+.teste:nth-child(1){
+     grid-area: one;
+     background-color: burlywood;
+
+}
+.teste:nth-child(2){
+     grid-area: two;
+     background-color: burlywood;
+
+}
+.teste:nth-child(3){
+     grid-area: three;
+     background-color: burlywood;
+
+}
+.teste:nth-child(4){
+     grid-area: four;
+     background-color: burlywood;
+
+}
+.teste:nth-child(5){
+     grid-area: five;
+     background-color: burlywood;
+
+}
+.teste:nth-child(6){
+     grid-area: six;
+     background-color: burlywood;
+
 }
 /*------------------------------MEDIA-SCREEN-------------------------------*/
 
@@ -988,4 +1035,9 @@ i:hover {
           margin-top: 10rem;
      }
 
+     .testimonial{
+          grid-template-areas: 
+               'one' 'two' 'three'
+               'four' 'five' 'six';
+     }
 }
