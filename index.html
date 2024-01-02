@@ -1,1043 +1,464 @@
-* {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-}
-
-body {
-     scroll-behavior: smooth; 
-     background-color: #100F11;
-}
-
-/*---------------------------------NAVBAR-------------------------------*/
-
-.nav-dark {
-     border-bottom: 3px solid #a2d821;
-     color: #969c3a;
-     background-color: transparent;
-}
-
-.nav-white {
-     border-bottom: 3px solid #540514;
-     color: #100F11;
-     background-color: transparent;
-}
-
-#logoIMG {
-     width: 13rem;
-     margin-left: 1rem;
-}
-
-nav ul {
-     list-style-type: none;
-     margin: auto;
-}
-
-nav li {
-     padding-left: 5rem;
-}
-
-a.active {
-     color: red;
-}
-
-#mode {
-     cursor: pointer;
-     font-size: large;
-     margin-left: 5rem;
-     margin-right: 5rem;
-}
-
-#user {
-     cursor: pointer;
-     font-size: x-large;
-     margin: 1rem;
-}
-
-/*---------------------------------HERO BACK MAIN-------------------------------*/
-
-.main {
-     background-image: url('Image/one.jpg');
-     background-size: cover;
-     width: 100%;
-     height: 45rem;
-}
-
-.hero-content {
-     padding-top: 16rem;
-     padding-left: 3rem;
-}
-
-.main-content h1 {
-     animation: heroAni 1.6s ease-in-out 0.2s 1;
-     font-family: 'Bebas Neue';
-     letter-spacing: 0.6vw;
-     font-size: 55px;
-     text-shadow: 2.3px 2.3px 2.3px #100F11;
-     font-weight: 900;
-     color: white;
-}
-
-@keyframes heroAni {
-     0% {
-          transform: translateX(-50%);
-          opacity: 0;
-     }
-
-     100% {
-          transform: translateX(0);
-          opacity: 1;
-     }
-}
-
-.main-extra {
-     animation: extraAni 1.6s ease-in-out 0.2s 1;
-     gap: 1.2rem;
-     display: flex;
-     align-items: center;
-     padding-top: 0.8rem;
-     color: white;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-@keyframes extraAni {
-     0% {
-          transform: translateX(50%);
-          opacity: 0;
-     }
-
-     100% {
-          transform: translateX(0);
-          opacity: 1;
-     }
-}
-
-
-#line {
-     width: 6rem;
-     height: 0.2rem;
-     background-color: orangered;
-}
-
-/*----------------WHY WE NEED GYM ?------------------------------------------------*/
-
-.second-main {
-     height: auto;
-     width: 100%;
-     margin-top: 3rem;
-}
-
-.need-black {
-     color: aliceblue;
-     text-shadow: 1px 1px 1px aliceblue, -1px 1px 1px aliceblue, 1px -1px 1px aliceblue, -1px -1px 1px aliceblue;
-     font-weight: 500;
-     text-align: center;
-}
-
-.need-white {
-     color: #321F44;
-     text-shadow: 1px 1px 1px #321F44, -1px 1px 1px #321F44, 1px -1px 1px #321F44, -1px -1px 1px #321F44;
-     font-weight: 500;
-     text-align: center;
-}
-
-.card {
-     margin-top: 10px;
-     background-color: transparent;
-     color: wheat;
-     height: 380px;
-     text-align: center;
-     border: none;
-}
-
-.card h4 {
-     color: orangered;
-     font-weight: 500;
-}
-
-.card p {
-     letter-spacing: 0.5px;
-     word-spacing: 0.7px;
-     color: rgb(178, 190, 202);
-     line-height: 29px;
-}
-
-.card img {
-     box-shadow: 2px 2px 3px red, -2px 2px 3px red, 2px -2px 3px red, -2px -2px 3px red;
-     width: 8%;
-     margin-top: 5px;
-     margin-left: auto;
-     margin-right: auto;
-}
-
-.thoughts {
-     height: auto;
-     width: auto;
-     color: #f5f5f5;
-     text-align: center;
-     margin-bottom: 3rem;
-}
-
-@media screen and (min-width:500px) {   
-     .thoughts {
-          margin-top: -4rem;
-     }
-}
-
-.thoughts .line {
-     width: 5rem;
-     height: 0.3rem;
-     background-color: orangered;
-}
-
-.thoughts h3,
-h2 {
-     font-size: 25px;
-     padding: 0.5rem;
-}
-
-
-/* FITNESS SECTION */
-
-/*------------------------------STRTING FITNESS SECTION----------------------------------*/
-#main-fitness {
-     background: url('Image/fullGym.png');
-     background-size: cover;
-     background-attachment: fixed;
-}
-
-.fitness-head {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding-top: 1rem;
-}
-
-
-.fitness-head .line {
-     width: 20rem;
-     height: 0.3rem;
-     background-color: orangered;
-}
-
-.fitness-head h4 {
-     text-align: center;
-     font-size: 30px;
-     color: #68255e;
-}
-
-
-/*------------------------------GYM CLASS----------------------------------*/
-
-.gym {
-     width: 100%;
-     height: auto;
-     display: grid;
-     place-items: center;
-     grid-template-areas:
-          'one two three';
-     margin-top: 2.4rem;
-}
-
-.gym-intro {
-     background-color: rgba(245, 245, 245, 0.541);
-     margin-bottom: 2.4rem;
-     width: 85%;
-     height: 25rem;
-     font-size: 45px;
-     text-align: center;
-}
-
-#gym1 {
-     grid-area: one;
-}
-
-#gym2 {
-     grid-area: two;
-}
-
-#gym3 {
-     grid-area: three;
-}
-
-.visibilityForIntro {
-     visibility: hidden;
-}
-
-.visible {
-     visibility: "visible";
-}
-
-.more-about {
-     display: flex;
-     justify-content: space-evenly;
-     align-items: center;
-     margin-top: 2rem;
-     width: 100%;
-     height: auto;
-     color: whitesmoke;
-     background-color: blue;
-}
-
-#just {
-     margin-top: 3.9rem;
-}
-
-.more-about h6 {
-     padding-top: 5px;
-     font-size: 21px;
-}
-
-.more-about i {
-     font-size: large;
-     transition: 5s ease-in-out 0;
-}
-
-i:hover {
-     transform: scale(1.1);
-}
-
-.aniForGymInfo {
-     animation: aniForGymInfo 1s ease-out 1;
-}
-
-@keyframes aniForGymInfo {
-     0% {
-          transform: translateY(50%);
-          opacity: 0;
-     }
-
-     100% {
-          transform: translateY(0%);
-          opacity: 1;
-     }
-}
-
-.aniForGymIntro {
-     animation: gymIntroAni 1s ease-out 1;
-}
-
-@keyframes gymIntroAni {
-     0% {
-          transform: translateY(-50%);
-          opacity: 0;
-     }
-
-     100% {
-          transform: translateY(0%);
-          opacity: 1;
-     }
-}
-
-.gym-intro p {
-     padding: 2vw;
-     font-size: 20px;
-     color: black;
-     font-family: 'Quicksand';
-}
-
-
-/*------------------------------YOGA CLASS----------------------------------*/
-
-.yoga {
-     display: grid;
-     place-items: center;
-     grid-template-areas:
-          'one two'
-     ;
-     background: linear-gradient(to bottom , rgba(255, 255, 255, 0) , rgba(255, 255, 255, 0.4)), url('Image/yogaback.jpg');
-     background-size: cover;
-     height: auto;
-     width: auto;
-}
-
-.yoga .yogaOne {
-     grid-area: one;
-     width: 100%;
-     margin-left: 3rem;
-}
-
-.yoga .yogaTwo {
-     margin-top: 2rem;
-     width: 80%;
-     height: auto;
-     grid-area: two;
-     margin-right: 4rem;
-}
-
-#imgYoga {
-     margin-left: 3rem;
-     width: 70%;
-}
-
-.info {
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     gap: 1.3rem;
-}
-
-.yogaInfo-img {
-     height: 5rem;
-     width: 5rem;
-     background-color: rgba(67, 240, 104, 0.667);
-}
-
-.yogaInfo-img span {
-     color: rgb(245, 245, 245);
-     font-size: 50px;
-}
-
-.h4-info {
-     border-bottom: 1px solid red;
-     color: #1a0033;
-}
-
-.h4-info h4{
-     font-size: 26px;
-}
-
-.yoga-detail {
-     color: #100F11;
-     margin-left: 6.3rem;
-     margin-top: -1rem;
-}
-
-.yoga-detail ul {
-     margin-left: 2rem;
-     margin-top: -0.6rem;
-}
-
-
-/* MEMBERSHIP */
-
-#member{
-     margin-top: 2.4rem;
-     height: auto;
-     width: 100%;
-}
-
-.selfcare{
-     display: flex;
-     justify-content: center;
-     align-items: center ;
-     color: whitesmoke;
-     margin-bottom: 1.5rem;
-}
-
-.selfcare i{
-     padding: 0.3rem;
-     padding-bottom: 2rem;
-}
-
-/*-----------------------------MEMBERSHIP-----------------------------------*/
-
-
-.main-member{
-     width: 100%;
-     height: auto;
-     /* background: linear-gradient(90deg, rgba(131, 58, 180, 0.683) 0%, rgba(253,29,29, 0.683) 50%, rgba(252,176,69, 0.683) 100%); */
-}
-
-.joinNow{
-     padding-top: 1rem;
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     gap: 0.8rem;
-}
-
-.joinNow .line{
-     margin-left: 1rem;
-     width: 6.4rem;
-     height: 0.4rem;
-     background-color: orangered;
-}
-
-.joinNow h4{
-     color: whitesmoke;
-}
-
-.memberships-container{
-     margin-top: 1rem;
-     display: grid;
-     place-items: center;
-     grid-template-areas: 
-          'memberone membertwo memberthree'
-     ;
-     transition: scale 350ms ease , opacity 350ms linear;
-}
-
-.membership{
-     margin: 1rem;
-     width: 80%;
-     height: 20rem;
-     transition: transform 350ms ease, opacity 350ms linear;
-}
-
-
-#member1{
-     box-shadow: 1px 1px 12px rgb(130, 130, 130), -1px 1px 12px rgb(130, 130, 130), 1px -1px 12px rgb(130, 130, 130), -1px -1px 12px rgb(130, 130, 130);     
-     grid-area: memberone;
-     background-image: url('Image/yoga.jpg');
-     background-size: cover;
-     background-position-y: center;
-}
-#member2{
-     box-shadow: 1px 1px 12px rgb(130, 130, 130), -1px 1px 12px rgb(130, 130, 130), 1px -1px 12px rgb(130, 130, 130), -1px -1px 12px rgb(130, 130, 130);     
-     grid-area: membertwo;
-     background-image: url('Image/images (3).png');
-     background-size: cover;
-     background-position: 30%;
-}
-#member3{
-     box-shadow: 1px 1px 12px rgb(130, 130, 130), -1px 1px 12px rgb(130, 130, 130), 1px -1px 12px rgb(130, 130, 130), -1px -1px 12px rgb(130, 130, 130);     
-     grid-area: memberthree;
-     background-image: url('Image/yogagym.png');
-     background-size: cover;
-}
-
-/* --------------------------------MEMBERSHIP PRICE --------------------------------*/
-.price{
-     position: relative;
-     z-index: 1;
-}
-
-.amount{
-     border-left: 5px solid whitesmoke;
-     border-bottom-left-radius: 50% 100%;
-     border-top-left-radius: 0% 10%;
-     border-bottom: 5px solid whitesmoke;
-     margin-left: 12rem;
-     background-color: #FFFB7D;
-     height: 2.9rem;
-     width: auto;
-}
-
-.amount h1{
-     font-size: 2.3rem;
-     text-align: center;
-     padding-left: 1.6rem;
-}
-
-.priceAni{
-     animation: priceAni 2s ease 1;
-}
-
-@keyframes priceAni {
-     0%{
-          transform: translateX(50%);
-          opacity: 0;
-     }
-
-     100%{
-          opacity: 1;
-          transform: translateX(0%);
-     }
-}
-
-@keyframes perAni {
-     from{
-          transform: translateX(50%);
-          opacity: 0;
-     }
-     to{
-          opacity: 1;
-          transform: translateX(0%);
-     }
-}
-
-
-.price .per{
-     z-index: -1;
-     position: relative;
-     margin-top: -0.1rem;
-     margin-left: 14.49rem;
-     background-color:#100F11;
-     border-left: 5px solid whitesmoke;
-     border-bottom: 5px solid whitesmoke;
-     border-bottom-left-radius: 50% 100%;
-     border-top-left-radius: 0% 10%;
-     height: 2.5rem;
-}
-
-.perAni{
-     animation: perAni 2s ease 1;
-}
-
-.per p{
-     font-size: 0.9rem;
-     color: whitesmoke;
-     text-align: center;
-     padding-top: 0.5rem;
-     padding-left: 0.8rem;
-}
-
-/*-----------------------------MRMBERSHIP INFO-----------------------------------*/
-
-.membership h2{
-     background: rgb(0,163,204);
-     background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-     -webkit-text-fill-color: transparent;
-     background-clip: text;
-     padding-left: 1rem;
-     padding-top: 1rem;
-}
-
-.member-info{
-     background: linear-gradient(90deg, rgba(131, 58, 180, 0.683) 0%, rgba(253,29,29, 0.683) 50%, rgba(252,176,69, 0.683) 100%);
-     /* background-image: linear-gradient(to top, rgba(110, 187, 234, 0.562) 0%, rgb(226, 235, 240,0.562) 100%);      */
-     margin-top: 11.2rem;
-     position: relative;
-     height: 3.5rem;
-     width: 100%;
-     transition: all 1s;
-}
-
-.member-info:hover{
-     transform: translateY(-100%);
-}
-
-.para-msg{
-     height: 3.5rem;
-     background: linear-gradient(90deg, rgba(131, 58, 180, 0.683) 0%, rgba(253,29,29, 0.683) 50%, rgba(252,176,69, 0.683) 100%);
-     margin-top: -0.37rem;
-}    
-
-.para-msg p{
-     background: rgb(131,58,180);
-     background-color: #85FFBD;
-     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-     background-clip: text;
-     -webkit-text-fill-color: transparent;
-     padding-top: 1rem;
-     border-top : 1px solid #100F11;
-     border-radius: 20%;
-     font-size: 19px;
-     padding-left: 1rem;
-}
-
-/*-----------------------------TRAINEE-----------------------------------*/
-
-#trainee{
-     margin-top: 4rem;
-}
-
-.trainee{
-     height: 30rem;
-     width: 100%;
-     background: linear-gradient(to bottom, #100F11, rgba(255, 255, 255, 0) , #100F11),url('Image/glow_trainee.jpg');
-     background-size: cover;
-     color: rgba(255, 250, 250, 0.886);
-}
-
-.trainee-head{
-     margin-top: 3rem;
-     margin-left: 2rem;
-     height: auto;
-     width: 23rem;
-}
-
-.trainee-head h4{
-     padding-top: 1rem;
-     color: rgb(67, 132, 218);
-}
-
-.trainee-head p{
-     margin-top: 2rem;
-     color : whitesmoke;
-     text-align: justify;
-     font-family: 'Raleway';
-}
-
-.trainee-images{
-     margin-left: 27rem;
-}
-
-#trainee1{     
-     position: absolute;
-     top: 219.4rem;
-     left: 24rem;
-     height: 29rem;
-     z-index: 1;
-     animation: trainee1 1s ease-in-out 0s 1;
-}
-
-#trainee2{
-     position: absolute;
-     top: 224.6rem;
-     left: 38rem;
-     height: 21rem;
-     animation: trainee2 1s ease-in-out 0.5s 1;
-}
-
-#trainee3{
-     position: absolute;
-     top: 220.6rem;
-     left: 50rem;
-     height: 25rem;
-     animation: trainee3 1s ease-in-out 1s 1;
-}
-
-#trainee4{
-     position: absolute;
-     top: 223.5rem;
-     left: 59rem;
-     height: 22rem;
-     animation: trainee4 1s ease-in-out 1.5s 1;   
-}
-
-.trainee-name{
-     margin-left: 25rem;
-     display: flex;
-     gap: 3rem;
-}
-
-.name{
-     height: 4.5rem;
-     width: 11rem;
-     color: whitesmoke;
-     z-index: 1;
-     background-color: rgba(0, 0, 0, 0.8);
-}
-
-.name h3{
-     padding-left: 0.5rem;
-     color: whitesmoke;
-}
-
-.name h6{
-     font-size: 15px;
-     padding-left: 1rem;
-     color: #85FFBD;
-}
-
-.name:nth-child(1){
-     margin-top: 2rem;
-}
-
-.name:nth-child(2){
-     margin-top: -1rem;
-     margin-left: 2rem;
-}
-
-.name:nth-child(3){
-     margin-top: 5rem;
-     margin-left: -3rem;
-}
-
-.name:nth-child(4){
-     margin-top: 2rem;
-}
-
-/* @keyframes trainee1 {
-     from{
-          transform: translateY(50%);
-          opacity: 0;
-     }
-     to{
-          transform: translateY(0%);
-          opacity: 1;
-     }
-}
-@keyframes trainee2 {
-     from{
-          transform: translateY(50%);
-          opacity: 0;
-     }
-     to{
-          transform: translateY(0%);
-          opacity: 1;
-     }
-}
-@keyframes trainee3 {
-     from{
-          transform: translateY(50%);
-          opacity: 0;
-     }
-     to{
-          transform: translateY(0%);
-          opacity: 1;
-     }
-}
-@keyframes trainee4 {
-     from{
-          transform: translateY(50%);
-          opacity: 0;
-     }
-     to{
-          transform: translateY(0%);
-          opacity: 1;
-     }
-} */
-
-/*------------------------------TESTIMONIAL-------------------------------*/
-
-.testimonial{
-     height: auto;
-     width: 100%;
-     display: grid;
-     place-content: center;
-     grid-template-areas: 
-          'one two three'
-          'four five six';
-     gap: 20px;     
-     background-color: rebeccapurple;
-
-}
-
-.teste:nth-child(1){
-     grid-area: one;
-     background-color: burlywood;
-
-}
-.teste:nth-child(2){
-     grid-area: two;
-     background-color: burlywood;
-
-}
-.teste:nth-child(3){
-     grid-area: three;
-     background-color: burlywood;
-
-}
-.teste:nth-child(4){
-     grid-area: four;
-     background-color: burlywood;
-
-}
-.teste:nth-child(5){
-     grid-area: five;
-     background-color: burlywood;
-
-}
-.teste:nth-child(6){
-     grid-area: six;
-     background-color: burlywood;
-
-}
-/*------------------------------MEDIA-SCREEN-------------------------------*/
-
-@media screen and (max-width:500px) {
-     .card img {
-          width: 19%;
-     }
-
-     .gym {
-          grid-template-areas:
-               'one'
-               'two'
-               'three';
-          row-gap: 1rem;
-     }
-
-     .line {
-          width: 0rem;
-          height: 0rem;
-          background-color: '';
-     }
-
-     .thoughts {
-          margin-top: 3rem;
-     }
-
-     .thoughts h2 {
-          font-size: 20px;
-          padding: 0.5rem;
-     }
-
-     .fitness-head {
-          display: '';
-          justify-content: '';
-          align-items: '';
-          margin-top: 1.3rem;
-     }
-     
-     .fitness-head .line {
-          width: 0rem;
-          height: 0rem;
-     }
-     
-     .fitness-head h4 {
-          font-size: 21px;
-     }
-     
-     
-     .more-about {
-          margin-top: 4.2rem;
-     }
-
-     #just {
-          margin-top: 6.2rem;
-     }
-
-     .yoga {
-          grid-template-areas:
-               'two'
-               'one';
-     }
-
-     #imgYoga {
-          margin-left: 1rem;
-          width: 80%;
-     }
-
-     .yoga .yogaOne {
-          margin-left: 1rem;
-     }
-
-     .yoga .yogaTwo {
-          margin-top: 2rem;
-          width: 100%;
-          margin-right: 0rem;
-     }
-
-     .info {
-          gap: 1rem;
-     }
-
-     .yoga-detail {
-          margin-left: 6rem;
-          margin-top: 0rem;
-     }
-     
-     .yoga-detail ul {
-          margin-left: 1rem;
-          margin-top: -0.6rem;
-     }
-
-     .selfcare{
-          margin-bottom: 1.5rem;
-     }
-     
-     .selfcare i{
-          padding: 0rem;
-          padding-bottom: 1.5rem;
-     }
-
-     .selfcare h2{
-          font-size: 17px;
-          text-align: center;
-     }
-
-     .memberships-container{
-          grid-template-areas: 
-               'memberone' 'membertwo' 'memberthree'
-          ;
-     }
-
-     .para-msg p{
-          font-size: 15px;
-     }
-
-     .amount{
-          margin-left: 38vw;
-     }
-
-     .price .per{
-          margin-top: -0.1rem;
-          margin-left: 50vw;
-     }
-
-     .per p{
-          font-size: 0.9rem;
-          text-align: center;
-          padding-top: 0.3rem;
-          padding-left: 0.3rem;
-     }
-     
-     .membership{
-          margin:0rem;
-          margin-top: 1.9rem;
-          width: 90%;
-     }
-
-     .amount h1{
-          font-size: 2rem;
-          padding-left: 0.7rem;
-     }
-
-     .member-info{
-          margin-top: 11.2rem;
-     }
-
-     .trainee{
-          height: 35rem;
-     }
-     
-     .trainee-head{
-          width: 19rem;
-     }
-     
-     .trainee-images{
-          margin-left: 0rem;
-     }
-     
-     #trainee1{     
-          top: 398rem;
-          left: -1rem;
-          height: 18rem;
-     }
-     
-     #trainee2{
-          top: 401.5rem;
-          left: 6rem;
-          height: 13rem;
-     }
-     
-     #trainee3{
-          top: 397.5rem;
-          left: 14rem;
-          height: 17rem;
-     }
-     
-     #trainee4{
-          top: 401.6rem;
-          left: 12rem;
-          height: 13rem;
-     }
-     
-     .trainee-name{
-          margin-left: 0rem;
-          gap: 0rem;
-     }
-     
-     .name{
-          height: 3rem;
-          width: auto;
-     }
-     
-     .name h3{
-          font-size: 4.3vw;
-          padding-left: 0.2rem;
-     }
-     
-     .name h6{
-          font-size: 2.4vw;
-          padding-left: 0.21rem;
-     }
-     
-     .name:nth-child(1){
-          margin-top: 8.5rem;
-     }
-     
-     .name:nth-child(2){
-          margin-top: 12rem;
-          margin-left: 0rem;
-     }
-     
-     .name:nth-child(3){
-          margin-top: 0rem;
-          margin-left: 0rem;
-     }
-     
-     .name:nth-child(4){
-          margin-top: 10rem;
-     }
-
-     .testimonial{
-          grid-template-areas: 
-               'one' 'two' 'three'
-               'four' 'five' 'six';
-     }
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>FitPulse</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="index.css">
+
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&family=Titan+One&display=swap');
+     </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" class="dark">
+     <nav class="navbar navbar-expand-sm nav-dark fixed-top">
+          <a class="navbar-brand">
+               <img src="logo/dark-logo.png" id="logoIMG" alt="logo">
+          </a>
+
+          <button type="button" class="navbar-toggler" data-bs-target="#navcollapse" data-bs-toggle="collapse">
+               <i class="fa-solid fa-bars" style="color: #2d2d2d;"></i>
+
+          </button>
+
+          <ul class="collapse navbar-collapse" id="navcollapse">
+               <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+               </li>
+               <li class="nav-item">
+                    <a href="#fitness" class="nav-link">Fitness</a>
+               </li>
+               <li class="nav-item">
+                    <a href="#member" class="nav-link">Membership</a>
+               </li>
+               <li class="nav-item">
+                    <a href="#trainee" class="nav-link">Trainee</a>
+               </li>
+               <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+               </li>
+          </ul>
+
+          <i class="fa-solid fa-circle-half-stroke icon" id="mode"></i>
+          <i class="fa-solid fa-user" id="user"></i>
+     </nav>
+
+     <div id="home">
+
+          <div class="main">
+               <div class="hero-content">
+                    <div class="main-content">
+                         <h1>BULID PERFECT BODY </h1>
+                         <h1>SHAPE YOUR GOOD AND </h1>
+                         <h1>HEALTHY LIFE.</h1>
+                    </div>
+                    <div class="main-extra">
+                         <div id="line"></div>
+                         <h4>WITH FITPULSE</h4>
+                    </div>
+               </div>
+          </div>
+
+          <div class="second-main">
+               <h1 class="need-black">WHY WE NEED ?</h1>
+
+               <div class="carousel" id="facts" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                         <div class="carousel-item active">
+                              <div class="container">
+                                   <div class="card">
+                                        <img class="card-img-top rounded-circle" src="Image/depression.jpg" alt="Title">
+                                        <div class="card-body">
+                                             <h4 class="card-title">Depression</h4>
+                                             <p class="card-text">Depression affects about 1 in 15 adults in any
+                                                  given year, and 1 in 6 people will experience depression at some time
+                                                  in
+                                                  their life. An Our World In Data study estimates about 3.4% (2-6% when
+                                                  including the margin of error) of the global population has
+                                                  depression.
+                                                  This is about 264 million people worldwide.
+                                             </p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="carousel-item">
+                              <div class="container">
+                                   <div class="card">
+                                        <img class="card-img-top rounded-circle" src="Image/diabetes.jpg" alt="Title">
+                                        <div class="card-body">
+                                             <h4 class="card-title">Diabetes</h4>
+                                             <p class="card-text">According to the World Health Organization,
+                                                  diabetes was the direct cause of 1.5 million deaths in 2019, 48% of
+                                                  which
+                                                  occurred in patients younger than 70 years of age. The International
+                                                  Diabetes Federation (IDF) offers an even more sobering statistic,
+                                                  citing
+                                                  diabetes as the cause of 6.7 million deaths in 2021.</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="carousel-item">
+                              <div class="container">
+                                   <div class="card">
+                                        <img class="card-img-top rounded-circle" src="Image/cancer.jpg" alt="Title">
+                                        <div class="card-body">
+                                             <h4 class="card-title">Cancer</h4>
+                                             <p class="card-text">Cancer is the second leading cause of death
+                                                  worldwide, accounting for nearly 10 million deaths in 2020.Each year,
+                                                  approximately 400 000 children develop cancer.There are over 200
+                                                  different
+                                                  types of cancer, each with its own set of causes, risk factors,
+                                                  symptoms,
+                                                  and treatments.</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="carousel-item">
+                              <div class="container">
+                                   <div class="card ">
+                                        <img class="card-img-top rounded-circle" src="Image/attack.jpg" alt="Title">
+                                        <div class="card-body">
+                                             <h4 class="card-title">Heart Attack / CVDs</h4>
+                                             <p class="card-text">In 2019, an estimated 17.9 million people died
+                                                  from CVDs, representing 32% of all global deaths. Of these deaths, 85%
+                                                  were
+                                                  due to heart attack and stroke.A recent report from the World Heart
+                                                  Federation (WHF) states that deaths from cardiovascular disease surged
+                                                  globally from 12.1 million in 1990 to 20.5 million in 2021. </p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="carousel-item">
+                              <div class="container">
+                                   <div class="card">
+                                        <img class="card-img-top rounded-circle" src="Image/obesity.jpg" alt="Title">
+                                        <div class="card-body">
+                                             <h4 class="card-title">Obesity</h4>
+                                             <p class="card-text">The issue has grown to epidemic proportions,
+                                                  with over 4 million people dying each year as a result of being
+                                                  overweight
+                                                  or obese in 2017 according to the global burden of disease.</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="carousel-item">
+                              <div class="container">
+                                   <div class="card">
+                                        <img class="card-img-top rounded-circle" src="Image/stress.jpg" alt="Title">
+                                        <div class="card-body">
+                                             <h4 class="card-title">Stress</h4>
+                                             <p class="card-text">Stress has become a familiar companion.
+                                                  Balancing work, family, and personal responsibilities can often lead
+                                                  to
+                                                  heightened stress levels, affecting both our mental and physical
+                                                  health.
+                                                  With the hustle and bustle of modern life, it's not uncommon to find
+                                                  ourselves burning the midnight oil or sacrificing precious hours of
+                                                  sleep.
+                                             </p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="carousel-item">
+                              <div class="container">
+                                   <div class="card">
+                                        <img class="card-img-top rounded-circle" src="Image/food.jpg" alt="Title">
+                                        <div class="card-body">
+                                             <h4 class="card-title">Food And Sleep</h4>
+                                             <p class="card-text">In a world where time is of the essence, fast
+                                                  food and processed snacks often find their way into our daily diets.
+                                                  Late
+                                                  nights and early mornings can disrupt our circadian rhythm, impacting
+                                                  overall health and vitality.</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <button type="button" class="carousel-control-prev" data-bs-target="#facts" data-bs-slide="prev"
+                         style="padding-right: 55px;">
+                         <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button type="button" class="carousel-control-next" data-bs-target="#facts" data-bs-slide="next"
+                         style="padding-left: 55px;">
+                         <span class="carousel-control-next-icon"></span>
+                    </button>
+               </div>
+          </div>
+     </div>
+
+     <div class="thoughts">
+          <h2 class="mb-3">"WORKING TOWARDS A HEALTHIER INDIA"</h2>
+          <div class="mx-auto line"></div>
+          <h2 class="mt-3">Building A Society That Is Healthier, Fitter & Better.</h2>
+          <div class="mx-auto line"></div>
+     </div>
+
+     <div id="fitness">
+          <div id="main-fitness">
+               <div class="fitness-head">
+                    <div class="line"></div>
+                    <h4>PLUSE YOUR HEALTH WITH FITPULSE</h4>
+                    <div class="line"></div>
+               </div>
+
+               <div class="gym">
+                    <div class="gym-intro" id="gym1">
+                         <h4 class="visibilityForIntro">Top-notch Equipment</h4>
+                         <i class="fa-solid fa-dumbbell" id="first"></i>
+                         <p>Our gym boasts a variety of high-quality fitness equipment, including cardio, weight
+                              machines, free weights, swimming pool, sauna, and steam room, ensuring a great workout
+                              experience.</p>
+                         <div class="more-about visibilityForIntro">
+                              <h6>Learn More About</h6>
+                              <i class="fa-solid fa-magnifying-glass-arrow-right"></i>
+                         </div>
+                    </div>
+                    <div class="gym-intro" id="gym2">
+                         <h4 class="visibilityForIntro">Fitness Programs</h4>
+                         <i class="fa-solid fa-calendar-days" id="sec"></i>
+                         <p>Our fitness programs cater to all fitness levels, offering group classes, personal training
+                              sessions, and specialized workshops for both beginners and advanced enthusiasts.</p>
+                         <div class="more-about visibilityForIntro" id="just">
+                              <h6>Learn More About</h6>
+                              <i class="fa-solid fa-magnifying-glass-arrow-right"></i>
+                         </div>
+                    </div>
+                    <div class="gym-intro" id="gym3">
+                         <h4 class="visibilityForIntro">Your Safety Matters</h4>
+                         <i class="fa-solid fa-house-medical" id="third"></i>
+                         <p>Our gym prioritizes safety with strict sanitization protocols, regular equipment
+                              maintenance, clean locker rooms, towel service, and trained staff to create a secure,
+                              clean workout atmosphere.</p>
+                         <div class="more-about visibilityForIntro">
+                              <h6>Learn More About</h6>
+                              <i class="fa-solid fa-magnifying-glass-arrow-right"></i>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <div class="container-fluid thoughts mt-5">
+               <h2>"Embrace a Holistic Wellness Experience"</h2>
+               <div class="mx-auto line"></div>
+               <h2 class="mt-2">#Discover the transformative power of yoga with FitPulse.</h2>
+          </div>
+
+
+          <div class="container-fluid yoga">
+               <div class="yogaOne">
+                    <img src="Image/yoga.png.webp" class="img-fluid" id="imgYoga">
+               </div>
+
+               <div class="yogaTwo">
+                    <div class="yoga-Info">
+                         <div class="info">
+                              <div class="yogaInfo-img rounded-circle d-flex align-items-center justify-content-center">
+                                   <span class="material-symbols-outlined">
+                                        psychology_alt
+                                   </span>
+                              </div>
+                              <div class="h4-info">
+                                   <h4>Discover Yourself</h4>
+                              </div>
+                         </div>
+                         <div class="yoga-detail">
+                              <p>Immerse yourself in a world of serenity and harmony with our diverse range of yoga
+                                   classes, designed to cater to every level and preference. Whether you're a seasoned
+                                   practitioner or a curious beginner, our experienced instructors will guide you on a
+                                   journey of self-discovery and physical transformation.</p>
+                         </div>
+                    </div>
+
+                    <div class="yoga-Info">
+                         <div class="info">
+                              <div class="yogaInfo-img rounded-circle d-flex align-items-center justify-content-center">
+                                   <span class="material-symbols-outlined">
+                                        self_improvement
+                                   </span>
+                              </div>
+                              <div class="h4-info">
+                                   <h4>Explore Our Programs</h4>
+                              </div>
+                         </div>
+                         <div class="yoga-detail">
+                              <p>Hatha Yoga , Vinyasa Yoga , Restorative Yoga , Yin Yoga , Laughter Club and more.<br>At
+                                   FitPulse, we believe that yoga is more than just physical exercise; it's a holistic
+                                   approach to well-being that nurtures both your body and mind. Our classes are
+                                   designed to:</p>
+                              <ul>
+                                   <li>Enhance physical flexibility, strength, and balance</li>
+                                   <li>Promote mental clarity, focus, and stress reduction</li>
+                                   <li>Cultivate mindfulness, self-awareness, and inner peace</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="yoga-Info">
+                         <div class="info">
+                              <div class="yogaInfo-img rounded-circle d-flex align-items-center justify-content-center">
+                                   <span class="material-symbols-outlined">
+                                        psychiatry
+                                   </span>
+                              </div>
+                              <div class="h4-info">
+                                   <h4>Find Your Inner Peace</h4>
+                              </div>
+                         </div>
+                         <div class="yoga-detail">
+                              <p>Step into our serene studio, where a tranquil ambiance awaits. Let our experienced
+                                   instructors guide you on a journey of self-discovery, unlocking the transformative
+                                   power of yoga.</p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <div id="member">
+          <div class="member-thought container-fluid">
+               <div class="selfcare">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <h2>SELF CARE IS NOT A SELFISH ACT BUT IT IS A ACT OF SELF-LOVE AND SELF-PRESERVATION</h2>
+                    <i class="fa-solid fa-quote-right"></i>
+               </div>
+
+               <div class="main-member container-fluid">
+                    <div class="joinNow">
+                         <div class="line"></div>
+                         <h4>JOIN NOW</h4>
+                    </div>
+                    <div class="memberships-container container-fluid">
+                         <div class="membership" id="member1">
+                              <div class="price visibilityForIntro">
+                                   <div class="amount">
+                                        <h1>299/-</h1>
+                                   </div>
+                                   <div class="per visibilityForIntro">
+                                        <p>Per Month</p>
+                                   </div>
+                              </div><div class="member-info">
+                                   <h2>Yoga Class</h2>
+                                   <div class="para-msg visibilityForIntro">
+                                        <p id="msg1">Join Our Specialized Yoga Class</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="membership" id="member2">
+                              <div class="price visibilityForIntro">
+                                   <div class="amount">
+                                        <h1>299/-</h1>
+                                   </div>
+                                   <div class="per visibilityForIntro">
+                                        <p>Per Month</p>
+                                   </div>
+                              </div><div class="member-info">
+                                   <h2>Gym Class</h2>
+                                   <div class="para-msg visibilityForIntro">
+                                        <p id="msg1">Join Our Specialized Gym Class</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="membership" id="member3">
+                              <div class="price visibilityForIntro">
+                                   <div class="amount">
+                                        <h1>449/-</h1>
+                                   </div>
+                                   <div class="per visibilityForIntro">
+                                        <p>Per Month</p>
+                                   </div>
+                              </div><div class="member-info">
+                                   <h2>Exclusive Class</h2>
+                                   <div class="para-msg visibilityForIntro">
+                                        <p id="msg1">Join Our Exclusive Integrated Class</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <div id="trainee">        
+          <div class="joinNow">
+               <div class="line"></div>
+               <h4>Meet Our Trainers</h4>
+          </div>
+          <div class="trainee container-fluid">
+               <div class="trainee-head">
+                    <h4>AT FITPULSE</h4>
+                    <p>We have a team of certified personal trainers who can help you create a customized workout plan. Whether you're a beginner or an experienced athlete, we have something for everyoneWe also offer personal training sessions to help you reach your fitness goals faster. Our personal trainers can help you create a customized workout plan and provide you with guidance and support.</p>
+               </div>
+               <div class="trainee-images">
+                    <img src="Image/1.png.webp" class="img-fluid" id="trainee1" alt="trainee-1"/>
+                    <img src="Image/2.png.webp" class="img-fluid" id="trainee2" alt="trainee-2"/>
+                    <img src="Image/3.png.webp" class="img-fluid" id="trainee3" alt="trainee-3"/>
+                    <img src="Image/4.png.webp" class="img-fluid" id="trainee4" alt="trainee-4"/>
+               </div>
+               <div class="trainee-name">
+                    <div class="name">
+                         <h3>Mona John</h3>
+                         <h6>PERSONAL TRAINER</h6>
+                    </div>
+                    <div class="name">
+                         <h3>Ross Geller</h3>
+                         <h6>PERSONAL TRAINER</h6>
+                    </div>
+                    <div class="name">
+                         <h3>Joey Bing</h3>
+                         <h6>PERSONAL TRAINER</h6>
+                    </div>
+                    <div class="name">
+                         <h3>Lucia Green</h3>
+                         <h6>PERSONAL TRAINER</h6>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <div id="about">     
+          <div class="thoughts mt-5">
+               <h2>Meet Out Testimonial</h2>
+               <div class="mx-auto mt-3 line"></div>
+          </div>
+
+          <div class="container-fluid">
+               <div class="testimonial">
+                    <div class="teste">Joining this gym has been a game-changer for me. The top-notch facilities, diverse fitness programs, and unwavering commitment to safety create an environment where fitness goals are not only met but exceeded. The supportive community and welcoming staff make every visit a positive experience. It's more than a gym; it's a transformative journey to a healthier, happier lifestyle.</div>
+                    <div class="teste">Transformative gym experience! Top-notch facilities, diverse programs, and a supportive community make every visit exceptional. Safety is a priority, and the welcoming staff ensures a positive atmosphere. It's not just a gym; it's a journey to a healthier, happier lifestyle</div>
+                    <div class="teste">Unparalleled fitness journey! This gym offers top-notch facilities, diverse programs, and a supportive community. Safety is a priority, and the welcoming staff ensures a positive atmosphere. It's not just a gym; it's a transformative experience that promotes a healthier and happier lifestyle!</div>
+                    <div class="teste">Life-changing fitness journey! Exceptional facilities, diverse programs, and a supportive community. Safety is a priority, and the positive atmosphere makes it more than just a gym – it's a path to a healthier, happier lifestyle!</div>
+                    <div class="teste">Elevating my fitness game! Outstanding facilities, diverse programs, and a friendly community. Safety is paramount, creating an environment that goes beyond a gym – it's a dynamic space for a healthier, happier life!</div>
+                    <div class="teste">Fitness excellence! Exceptional facilities, diverse programs, and a supportive community make this gym stand out. Safety is prioritized, creating a positive environment that turns workouts into a journey toward a healthier, happier life!</div>
+               </div>
+          </div>
+     </div>
+
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rerum cumque, neque ab fugiat laboriosam inventore nam, praesentium omnis eos consequuntur asperiores ratione dolorum quis a placeat pariatur beatae autem! Illum vero maxime temporibus velit! Asperiores consequuntur nesciunt blanditiis accusantium distinctio eveniet eligendi provident, necessitatibus dolore? Quod accusantium, eos odit aut atque sunt, perspiciatis eum quia eveniet, et quidem non sit distinctio harum veritatis praesentium sed itaque saepe eius earum id laudantium! Qui sit velit hic cum quaerat deserunt molestiae saepe itaque non fugiat quisquam nostrum, totam alias consequuntur eligendi obcaecati eaque enim, omnis vitae. Accusantium fuga nisi explicabo, suscipit quo libero unde veritatis numquam quod placeat inventore expedita cupiditate odit, dolorem maxime nemo velit soluta voluptatem enim incidunt. Ad, quo saepe maiores magnam sapiente minus dolores quis eius, dolorum suscipit impedit facilis quisquam! Sunt rem doloremque quos magnam sint qui maiores! Tempore magni nisi earum aperiam, accusantium culpa non in? Similique quis ipsa maiores vitae ab dolor nesciunt exercitationem commodi odio nisi. Perferendis accusamus atque consectetur ad reprehenderit culpa voluptatibus! Officiis harum incidunt, beatae tempore dolorem quos debitis non repellat officia corrupti deleniti, facere laudantium ducimus. Nostrum omnis fuga earum sit. Facere, modi voluptates vero nostrum aut dicta corporis!lorem200
+
+</body>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="index.js"></script>
+
+</html>
