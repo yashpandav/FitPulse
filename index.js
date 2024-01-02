@@ -139,7 +139,7 @@ memberships.forEach(function (membership) {
                if (otherMembership !== membership) {
                     otherMembership.style.transform = "scale(0.8)";
                     otherMembership.style.opacity = "0.7";
-                    membership.style.boxShadow = "10px 10px 10px white,-10px 10px 10px white,10px -10px 10px white,-10px -10px 10px white";
+                    membership.style.boxShadow = "1px 1px 12px #eae1eb, -1px 1px 12px #eae1eb, 1px -1px 12px #eae1eb, -1px -1px 12px #eae1eb";
                }
           });
      });
@@ -148,7 +148,7 @@ memberships.forEach(function (membership) {
           memberships.forEach(function (otherMembership) {
                otherMembership.style.transform = "";
                otherMembership.style.opacity = "";
-               membership.style.boxShadow = "10px 10px 10px rgb(130, 130, 130), -10px 10px 10px rgb(130, 130, 130), 10px -10px 10px rgb(130, 130, 130), -10px -10px 10px rgb(130, 130, 130)";
+               membership.style.boxShadow = "1px 1px 12px rgb(130, 130, 130), -1px 1px 12px rgb(130, 130, 130), 1px -1px 12px rgb(130, 130, 130), -1px -1px 12px rgb(130, 130, 130)";
           });
      });
 });
