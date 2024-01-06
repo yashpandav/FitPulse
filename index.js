@@ -10,6 +10,10 @@ let joinNow = document.querySelectorAll(".joinNow h4");
 let traineeBack = document.querySelector(".trainee");
 let traineeH4 = document.querySelector(".trainee-head h4");
 let traineePara = document.querySelector(".trainee-head p")
+let replyPara = document.querySelectorAll(".reply p");
+let testMain = document.querySelectorAll(".teste");
+let quateImg = document.querySelectorAll(".LightQuote");
+let testerName = document.querySelectorAll(".joinNow h6");
 let click = false;
 
 /* DARK MODE AND WHITE MOMDE */
@@ -34,6 +38,19 @@ mode.addEventListener("click", () => {
           traineeBack.style.background = "linear-gradient(to bottom, rgba(255, 250, 250,0.95), rgb(255, 255, 255,0.6) , rgba(255, 250, 250, 0.95)),url('Image/glow_trainee.jpg')";
           traineeH4.style.color = "#103054";
           traineePara.style.color = "black"
+          replyPara.forEach(function (replyPara) {
+               replyPara.style.color = "#18022c";
+               replyPara.style.fontWeight = "bold";
+          });
+          testMain.forEach(function (testMain) {
+               testMain.style.backgroundColor = "rgba(206, 198, 209, 0.26)";
+          });
+          quateImg.forEach(function (quateImg) {
+               quateImg.src = "Image/LightQuoteWhite.png";
+          });
+          testerName.forEach(function (testerName) {
+               testerName.style.color = "#321F44";    
+          })
           click = true;
           active();
      } else {
@@ -56,6 +73,19 @@ mode.addEventListener("click", () => {
           traineeBack.style.background = "linear-gradient(to bottom, #100F11, rgba(255, 255, 255, 0) , #100F11),url('Image/glow_trainee.jpg')";
           traineeH4.style.color = "rgb(67, 132, 218)";
           traineePara.style.color = "whitesmoke";
+          replyPara.forEach(function (replyPara) {
+               replyPara.style.color = "whitesmoke";
+               replyPara.style.fontWeight = "normal";
+          });
+          testMain.forEach(function (testMain) {
+               testMain.style.backgroundColor = "rgba(48, 48, 47, 0.255)";
+          });
+          quateImg.forEach(function (quateImg) {
+               quateImg.src = "Image/LightQuoteDark.png";
+          });          
+          testerName.forEach(function (testerName) {
+               testerName.style.color = "whitesmoke";    
+          })
           click = false;
           active();
      }
