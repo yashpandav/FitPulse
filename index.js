@@ -240,6 +240,9 @@ for (let allMembers of membership) {
      )
 }
 
+
+// TESTIMONIAL MEDIA
+
 let replayCarousel = document.getElementById("replay");
 let replayNormal = document.querySelectorAll(".testimonial");
 const media = () =>{
