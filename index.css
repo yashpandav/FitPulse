@@ -782,40 +782,74 @@ i:hover {
           'one two three'
           'four five six';
      gap: 20px;     
-     background-color: rebeccapurple;
+     color: whitesmoke;
+}
 
+.teste{
+     background-color: rgba(40, 48, 40, 0.256);
+     height: 25vw;
 }
 
 .teste:nth-child(1){
      grid-area: one;
-     background-color: burlywood;
-
 }
 .teste:nth-child(2){
      grid-area: two;
-     background-color: burlywood;
-
 }
 .teste:nth-child(3){
      grid-area: three;
-     background-color: burlywood;
-
 }
 .teste:nth-child(4){
      grid-area: four;
-     background-color: burlywood;
-
 }
 .teste:nth-child(5){
      grid-area: five;
-     background-color: burlywood;
-
 }
 .teste:nth-child(6){
      grid-area: six;
-     background-color: burlywood;
-
 }
+
+.LightQuote{
+     width: 9vw;
+}
+
+.user-Image{
+     padding: 5px;
+     width: 8vw;
+     border: 5px solid #d7c2a4;
+}
+
+.reply p{
+     font-family: 'Titillium Web', sans-serif;
+     height: 13vw;
+     padding: 1vw;
+     padding-top: 2vw;
+     font-size: 1.15vw;
+     line-height: 2vw;
+     letter-spacing: 0.1vw;
+     word-spacing: 0.1vw;
+     text-align: justify;
+     text-indent: 5vw;
+}
+
+.nameOfteseter .joinNow{
+     justify-content: flex-end;
+     padding-top: 0rem;
+     margin-top: 2.4vw;
+     margin-right: 1rem;
+}
+
+.nameOfteseter .line{
+     margin-left: 1rem;
+     width: 7vw;
+     height: 0.35vw;
+     background-color: orangered;
+}
+
+.nameOfteseter h6{
+     font-family: 'Lemon', serif;
+}
+
 /*------------------------------MEDIA-SCREEN-------------------------------*/
 
 @media screen and (max-width:500px) {
