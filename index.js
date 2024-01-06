@@ -14,6 +14,9 @@ let replyPara = document.querySelectorAll(".reply p");
 let testMain = document.querySelectorAll(".teste");
 let quateImg = document.querySelectorAll(".LightQuote");
 let testerName = document.querySelectorAll(".joinNow h6");
+let testerReplay = document.querySelector("#replay");
+let testerNameCard = testerReplay.querySelectorAll("p");
+let testerh4 = testerReplay.querySelectorAll("h4");
 let click = false;
 
 /* DARK MODE AND WHITE MOMDE */
@@ -51,6 +54,13 @@ mode.addEventListener("click", () => {
           testerName.forEach(function (testerName) {
                testerName.style.color = "#321F44";    
           })
+          testerNameCard.forEach(function (testerNameCard) {
+               testerNameCard.style.color = "#321F44";
+          });
+          testerh4.forEach(function (testerh4) {
+               testerh4.style.color = "#321F44";
+          });
+          testerReplay.style.backgroundImage = "url('Image/LightQuoteWhite.png')";
           click = true;
           active();
      } else {
@@ -86,6 +96,13 @@ mode.addEventListener("click", () => {
           testerName.forEach(function (testerName) {
                testerName.style.color = "whitesmoke";    
           })
+          testerNameCard.forEach(function (testerNameCard) {
+               testerNameCard.style.color = "whitesmoke";
+          });
+          testerh4.forEach(function (testerh4) {
+               testerh4.style.color = "whitesmoke";
+          });
+          testerReplay.style.backgroundImage = "url('Image/LightQuoteDark.png')";
           click = false;
           active();
      }
@@ -222,6 +239,26 @@ for (let allMembers of membership) {
      }
      )
 }
+
+let replayCarousel = document.getElementById("replay");
+let replayNormal = document.querySelectorAll(".testimonial");
+const media = () =>{
+     let q = matchMedia("(max-width:500px)");
+     if(q.matches){
+          replayNormal.forEach(function (item) {
+               item.style.display = "none";
+          });
+          replayCarousel.style.display = "block";
+     }
+     else{
+          replayCarousel.style.display = "none";
+          replayNormal.forEach(function (item) {
+               item.style.display = "grid";
+          });    
+     }
+}
+onload = media;
+onresize = media;
 
 //#969c3a  :: GOLDEN
 //#6b3a9c  :: PURPLE
