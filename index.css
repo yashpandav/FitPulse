@@ -786,7 +786,7 @@ i:hover {
 }
 
 .teste{
-     background-color: rgba(40, 48, 40, 0.256);
+     background-color: rgba(48, 48, 47, 0.255);
      height: 25vw;
 }
 
@@ -835,7 +835,7 @@ i:hover {
 .nameOfteseter .joinNow{
      justify-content: flex-end;
      padding-top: 0rem;
-     margin-top: 2.4vw;
+     margin-top: 2vw;
      margin-right: 1rem;
 }
 
@@ -1073,5 +1073,43 @@ i:hover {
           grid-template-areas: 
                'one' 'two' 'three'
                'four' 'five' 'six';
+     }
+
+     .teste{
+          height: auto;
+     }
+
+     .LightQuote{
+          width: 9vw;
+     }
+
+     .user-Image{
+          padding: 5px;
+          width: 8vw;
+          border: 5px solid #d7c2a4;
+     }
+
+     .reply p{
+          height: 13vw;
+          padding: 1vw;
+          padding-top: 2vw;
+          font-size: 1.15vw;
+          line-height: 2vw;
+          letter-spacing: 0.1vw;
+          word-spacing: 0.1vw;
+          text-indent: 5vw;
+     }
+
+     .nameOfteseter .joinNow{
+          justify-content: flex-end;
+          padding-top: 0rem;
+          margin-top: 2vw;
+          margin-right: 1rem;
+     }
+
+     .nameOfteseter .line{
+          margin-left: 1rem;
+          width: 7vw;
+          height: 0.35vw;
      }
 }
