@@ -272,7 +272,7 @@ h2 {
      display: flex;
      justify-content: space-evenly;
      align-items: center;
-     margin-top: 2rem;
+     margin-top: 3.7vw;
      width: 100%;
      height: auto;
      color: whitesmoke;
@@ -280,7 +280,7 @@ h2 {
 }
 
 #just {
-     margin-top: 3.9rem;
+     margin-top: 4.5vw;
 }
 
 .more-about h6 {
@@ -436,7 +436,6 @@ i:hover {
 .main-member{
      width: 100%;
      height: auto;
-     /* background: linear-gradient(90deg, rgba(131, 58, 180, 0.683) 0%, rgba(253,29,29, 0.683) 50%, rgba(252,176,69, 0.683) 100%); */
 }
 
 .joinNow{
@@ -470,8 +469,8 @@ i:hover {
 
 .membership{
      margin: 1rem;
-     width: 80%;
-     height: 20rem;
+     width: 23vw;
+     height: 23vw;
      transition: transform 350ms ease, opacity 350ms linear;
 }
 
@@ -510,14 +509,14 @@ i:hover {
      border-bottom: 5px solid whitesmoke;
      margin-left: 12rem;
      background-color: #FFFB7D;
-     height: 2.9rem;
+     height: 3.5vw;
      width: auto;
 }
 
 .amount h1{
-     font-size: 2.3rem;
+     font-size: 2.5vw;
      text-align: center;
-     padding-left: 1.6rem;
+     padding-left: 1rem;
 }
 
 .priceAni{
@@ -551,14 +550,14 @@ i:hover {
 .price .per{
      z-index: -1;
      position: relative;
-     margin-top: -0.1rem;
-     margin-left: 14.49rem;
+     margin-top: -0.1vw;
+     margin-left: 17.5vw;
      background-color:#100F11;
      border-left: 5px solid whitesmoke;
      border-bottom: 5px solid whitesmoke;
      border-bottom-left-radius: 50% 100%;
      border-top-left-radius: 0% 10%;
-     height: 2.5rem;
+     height: 3vw;
 }
 
 .perAni{
@@ -566,11 +565,9 @@ i:hover {
 }
 
 .per p{
-     font-size: 0.9rem;
+     font-size: 1vw;
      color: whitesmoke;
-     text-align: center;
-     padding-top: 0.5rem;
-     padding-left: 0.8rem;
+     padding-left: 0.2vw;
 }
 
 /*-----------------------------MRMBERSHIP INFO-----------------------------------*/
@@ -580,16 +577,15 @@ i:hover {
      background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
      -webkit-text-fill-color: transparent;
      background-clip: text;
-     padding-left: 1rem;
-     padding-top: 1rem;
+     padding-left: 1vw;
+     padding-top: 1vw;
 }
 
 .member-info{
      background: linear-gradient(90deg, rgba(131, 58, 180, 0.683) 0%, rgba(253,29,29, 0.683) 50%, rgba(252,176,69, 0.683) 100%);
-     /* background-image: linear-gradient(to top, rgba(110, 187, 234, 0.562) 0%, rgb(226, 235, 240,0.562) 100%);      */
-     margin-top: 11.2rem;
+     margin-top: 12.7vw;
      position: relative;
-     height: 3.5rem;
+     height: 3.9vw;
      width: 100%;
      transition: all 1s;
 }
@@ -599,9 +595,9 @@ i:hover {
 }
 
 .para-msg{
-     height: 3.5rem;
+     height: 4.1vw;
      background: linear-gradient(90deg, rgba(131, 58, 180, 0.683) 0%, rgba(253,29,29, 0.683) 50%, rgba(252,176,69, 0.683) 100%);
-     margin-top: -0.37rem;
+     margin-top: -0.9vw;
 }    
 
 .para-msg p{
@@ -610,11 +606,11 @@ i:hover {
      background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
      background-clip: text;
      -webkit-text-fill-color: transparent;
-     padding-top: 1rem;
+     padding-top: 1vw;
      border-top : 1px solid #100F11;
      border-radius: 20%;
-     font-size: 19px;
-     padding-left: 1rem;
+     font-size: 1.3vw;
+     padding-left: 1vw;
 }
 
 /*-----------------------------TRAINEE-----------------------------------*/
@@ -657,7 +653,7 @@ i:hover {
 #trainee1{     
      position: absolute;
      top: 219.4rem;
-     left: 24rem;
+     left: 30vw;
      height: 29rem;
      z-index: 1;
      animation: trainee1 1s ease-in-out 0s 1;
@@ -666,7 +662,7 @@ i:hover {
 #trainee2{
      position: absolute;
      top: 224.6rem;
-     left: 38rem;
+     left: 45vw;
      height: 21rem;
      animation: trainee2 1s ease-in-out 0.5s 1;
 }
@@ -674,7 +670,7 @@ i:hover {
 #trainee3{
      position: absolute;
      top: 220.6rem;
-     left: 50rem;
+     left: 61vw;
      height: 25rem;
      animation: trainee3 1s ease-in-out 1s 1;
 }
@@ -682,7 +678,7 @@ i:hover {
 #trainee4{
      position: absolute;
      top: 223.5rem;
-     left: 59rem;
+     left: 72vw;
      height: 22rem;
      animation: trainee4 1s ease-in-out 1.5s 1;   
 }
@@ -933,7 +929,7 @@ i:hover {
      
      
      .more-about {
-          margin-top: 4.2rem;
+          margin-top: 3.9ch;
      }
 
      #just {
@@ -995,6 +991,12 @@ i:hover {
           ;
      }
 
+     .membership{
+          margin: 1rem;
+          width: 90%;
+          height: 65vw;
+     }
+
      .para-msg p{
           font-size: 15px;
      }
@@ -1005,20 +1007,26 @@ i:hover {
 
      .price .per{
           margin-top: -0.1rem;
-          margin-left: 50vw;
+          margin-left: 51vw;
+          height: 11vw;
      }
 
      .per p{
           font-size: 0.9rem;
           text-align: center;
           padding-top: 0.3rem;
-          padding-left: 0.3rem;
+          padding-left: 0.1rem;
      }
-     
-     .membership{
-          margin:0rem;
-          margin-top: 1.9rem;
-          width: 90%;
+
+     .amount{
+          margin-left: 43vw;
+          height: 11vw;
+     }
+
+     .amount h1{
+          font-size: 2.5vw;
+          text-align: center;
+          padding-left: 2vw;
      }
 
      .amount h1{
@@ -1027,7 +1035,22 @@ i:hover {
      }
 
      .member-info{
-          margin-top: 11.2rem;
+          margin-top: 28.9vw;
+          height: 15vw;
+     }
+
+     .membership h2{
+          padding-top: 2.5vw;
+     }
+
+     .para-msg{
+          height: 15.4vw;
+          margin-top: -0.9vw;
+     }    
+     
+     .para-msg p{
+          padding-top: 1vw;
+          font-size: 5.1vw;
      }
 
      .trainee{
@@ -1043,26 +1066,26 @@ i:hover {
      }
      
      #trainee1{     
-          top: 398rem;
+          top: 710.2ch;
           left: -1rem;
-          height: 18rem;
+          height: 35ch;
      }
      
      #trainee2{
-          top: 401.5rem;
+          top: 717.3ch;
           left: 6rem;
-          height: 13rem;
+          height: 25ch;
      }
      
      #trainee3{
-          top: 397.5rem;
-          left: 14rem;
-          height: 17rem;
+          top: 709ch;
+          left: 27ch;
+          height: 33ch;
      }
      
      #trainee4{
-          top: 401.6rem;
-          left: 12rem;
+          top: 718.5ch;
+          left: 30ch;
           height: 13rem;
      }
      
@@ -1096,12 +1119,12 @@ i:hover {
      }
      
      .name:nth-child(3){
-          margin-top: 0rem;
-          margin-left: 0rem;
+          margin-top: -0.3rem;
+          margin-left: -0.5rem;
      }
      
      .name:nth-child(4){
-          margin-top: 10rem;
+          margin-top: 12rem;
      }
 
      .testimonial{
