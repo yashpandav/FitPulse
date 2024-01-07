@@ -927,7 +927,6 @@ i:hover {
           font-size: 21px;
      }
      
-     
      .more-about {
           margin-top: 3.9ch;
      }
@@ -1042,15 +1041,16 @@ i:hover {
      .membership h2{
           padding-top: 2.5vw;
      }
-
+          
      .para-msg{
-          height: 15.4vw;
-          margin-top: -0.9vw;
+          height: 3.5rem;
+          margin-top: -0.37rem;
      }    
-     
+
      .para-msg p{
-          padding-top: 1vw;
-          font-size: 5.1vw;
+          padding-top: 0.5rem;
+          font-size: 17.5px;
+          padding-left: 0.5rem;
      }
 
      .trainee{
