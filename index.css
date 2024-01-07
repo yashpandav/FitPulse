@@ -469,11 +469,10 @@ i:hover {
 
 .membership{
      margin: 1rem;
-     width: 23vw;
-     height: 23vw;
+     width: 80%;
+     height: 20rem;
      transition: transform 350ms ease, opacity 350ms linear;
 }
-
 
 #member1{
      box-shadow: 1px 1px 12px rgb(130, 130, 130), -1px 1px 12px rgb(130, 130, 130), 1px -1px 12px rgb(130, 130, 130), -1px -1px 12px rgb(130, 130, 130);     
@@ -550,14 +549,14 @@ i:hover {
 .price .per{
      z-index: -1;
      position: relative;
-     margin-top: -0.1vw;
-     margin-left: 17.5vw;
+     margin-top: -0.1rem;
+     margin-left: 14.49rem;
      background-color:#100F11;
      border-left: 5px solid whitesmoke;
      border-bottom: 5px solid whitesmoke;
      border-bottom-left-radius: 50% 100%;
      border-top-left-radius: 0% 10%;
-     height: 3vw;
+     height: 2.5rem;
 }
 
 .perAni{
@@ -565,9 +564,11 @@ i:hover {
 }
 
 .per p{
-     font-size: 1vw;
+     font-size: 0.9rem;
      color: whitesmoke;
-     padding-left: 0.2vw;
+     text-align: center;
+     padding-top: 0.5rem;
+     padding-left: 0.8rem;
 }
 
 /*-----------------------------MRMBERSHIP INFO-----------------------------------*/
@@ -577,15 +578,15 @@ i:hover {
      background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
      -webkit-text-fill-color: transparent;
      background-clip: text;
-     padding-left: 1vw;
-     padding-top: 1vw;
+     padding-left: 1rem;
+     padding-top: 1rem;
 }
 
 .member-info{
      background: linear-gradient(90deg, rgba(131, 58, 180, 0.683) 0%, rgba(253,29,29, 0.683) 50%, rgba(252,176,69, 0.683) 100%);
-     margin-top: 12.7vw;
+     margin-top: 11.3rem;
      position: relative;
-     height: 3.9vw;
+     height: 3.5rem;
      width: 100%;
      transition: all 1s;
 }
@@ -595,9 +596,9 @@ i:hover {
 }
 
 .para-msg{
-     height: 4.1vw;
+     height: 3.5rem;
      background: linear-gradient(90deg, rgba(131, 58, 180, 0.683) 0%, rgba(253,29,29, 0.683) 50%, rgba(252,176,69, 0.683) 100%);
-     margin-top: -0.9vw;
+     margin-top: -0.37rem;
 }    
 
 .para-msg p{
@@ -606,11 +607,11 @@ i:hover {
      background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
      background-clip: text;
      -webkit-text-fill-color: transparent;
-     padding-top: 1vw;
+     padding-top: 1rem;
      border-top : 1px solid #100F11;
      border-radius: 20%;
-     font-size: 1.3vw;
-     padding-left: 1vw;
+     font-size: 19px;
+     padding-left: 1rem;
 }
 
 /*-----------------------------TRAINEE-----------------------------------*/
@@ -1066,25 +1067,25 @@ i:hover {
      }
      
      #trainee1{     
-          top: 710.2ch;
+          top: 389rem;
           left: -1rem;
-          height: 35ch;
+          height: 18rem;
      }
      
      #trainee2{
-          top: 717.3ch;
+          top: 401.5rem;
           left: 6rem;
-          height: 25ch;
+          height: 13rem;
      }
      
      #trainee3{
-          top: 709ch;
+          top: 397.5rem;
           left: 14rem;
-          height: 33ch;
+          height: 17rem;
      }
      
      #trainee4{
-          top: 718.5ch;
+          top: 401.6rem;
           left: 12rem;
           height: 13rem;
      }
