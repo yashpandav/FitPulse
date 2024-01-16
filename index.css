@@ -1137,12 +1137,12 @@ input[type="reset"]{
 
      .para-msg {
           height: 3.5rem;
-          margin-top: -0.37rem;
+          margin-top: 0rem;
      }
 
      .para-msg p {
-          padding-top: 0.5rem;
-          font-size: 17.5px;
+          padding-top: 0.3rem;
+          font-size: 5vw;
           padding-left: 0.5rem;
      }
 
@@ -1226,10 +1226,72 @@ input[type="reset"]{
                'one' 'two' 'three'
                'four' 'five' 'six';
      }
+
+     .career {
+          flex-direction: column;
+     }
+
+     .career-img-container {
+          height: 400px;
+          width: 100%;
+          background-position: center;
+     }
+
+     .career-container {
+          height: auto;
+          width: 100%;
+     }
+
+     #joinTrainee{
+          margin-top: 9rem;
+     }
+
+     #joinTraineeAt {
+          margin-top: -1.2rem;
+          margin-left: 1rem;
+     }
+
+     #detailsHead{
+          font-size: 8vw;
+          padding-bottom: 1rem;
+          margin-top: 0.5rem;
+     }
+
+     label{
+          font-size: 4.5vw;
+     }
+
+     label[for="terms"]{
+          padding: 0rem;
+          font-size: 3vw;
+          line-height: auto;
+          letter-spacing: 0.1rem;
+          text-align: justify;
+          text-wrap: balance;
+          margin-left: 2rem;
+     }
+
+     input[type="checkbox"]{
+          margin-left: 1rem;
+     }
+
+     input[type="reset"]{
+          margin-top: 1.1rem;
+          margin-left: 16.5%;
+          width: 65%;
+          padding: 0.4rem;
+          font-size: 6.1vw;
+     }
+
 }
 
 @media screen and (min-width : 400px) and (max-width : 500px) {
-     
+
+     .para-msg {
+          height: 4rem;
+          margin-top: 1rem;
+     }
+
      #trainee1 {
           top: -1.1rem;
           left: -5.5vw;
